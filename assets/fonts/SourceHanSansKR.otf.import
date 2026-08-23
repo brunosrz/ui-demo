@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://ck2rs3nt6ql8a"
-path="res://.godot/imported/SourceHanSansKR.otf-ec2b9899afde2b8abaaef0d280b88926.fontdata"
+uid="uid://b4174plqqct2c"
+path="res://.godot/imported/sourcehansanskr.otf-650c5909c936aec2f20edac86de48c9e.fontdata"
 
 [deps]
 
 source_file="res://assets/fonts/sourcehansanskr.otf"
-dest_files=["res://.godot/imported/SourceHanSansKR.otf-ec2b9899afde2b8abaaef0d280b88926.fontdata"]
+dest_files=["res://.godot/imported/sourcehansanskr.otf-650c5909c936aec2f20edac86de48c9e.fontdata"]
 
 [params]
 

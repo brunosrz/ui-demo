@@ -1,5 +1,8 @@
 extends Panel
 
+const _ACTIVE_MODULATE_COLOR: Color = Color(0.39, 0.39, 0.39, 0.15)
+const _INACTIVE_MODULATE_COLOR: Color = Color(0.39, 0.39, 0.39, 0.0)
+
 var _tooltip_texts: Dictionary = {
 	"VideoButton": "Configurações de vídeo.",
 	"AudioButton": "Configurações de áudio.",
@@ -8,30 +11,35 @@ var _tooltip_texts: Dictionary = {
 	"BackButton": "Volta para o menu anterior.",
 	"ApplyButton": "Salva as configurações e volta para o menu anterior.",
 }
+var _category_modulates: Array[ColorRect]
 
-const _ACTIVE_MODULATE_COLOR: Color = Color(0.39, 0.39, 0.39, 0.15)
-const _INACTIVE_MODULATE_COLOR: Color = Color(0.39, 0.39, 0.39, 0.0)
+@onready var _box: Control = $PanelContainer/Margin/Box
 
-@onready
-var language_label: Label = $PanelContainer/Margin/Box/UPButtons/LabelContainer/LanguageLabel
-@onready
-var input_map_label: Label = $PanelContainer/Margin/Box/UPButtons/LabelContainer/InputMapLabel
+@onready var _label_container: Control = _box.get_node("UPButtons/LabelContainer")
+@onready var _video_label: Label = _label_container.get_node("VideoLabel")
+@onready var _audio_label: Label = _label_container.get_node("AudioLabel")
+@onready var _language_label: Label = _label_container.get_node("LanguageLabel")
+@onready var _input_map_label: Label = _label_container.get_node("InputMapLabel")
 
-@onready
-var _video_button: Button = $PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/VideoButton
-@onready
-var _audio_button: Button = $PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/AudioButton
-@onready
-var _input_map_button: Button = $PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/InputMapButton
-@onready
-var _language_button: Button = $PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/LanguageButton
+@onready var _content: Control = _box.get_node("ContentHBox/ScrollContent/CategoryContent")
+@onready var _video_settings_panel: Control = _content.get_node("VideoSettings")
+@onready var _audio_settings_panel: Control = _content.get_node("AudioSettings")
+@onready var _input_map_settings_panel: Control = _content.get_node("InputMapSettings")
+@onready var _language_settings_panel: Control = _content.get_node("LanguageSettings")
+
+@onready var _category_list: Control = _box.get_node("ContentHBox/ScrollList/CategoryList")
+@onready var _video_button: Button = _category_list.get_node("VideoButton")
+@onready var _audio_button: Button = _category_list.get_node("AudioButton")
+@onready var _input_map_button: Button = _category_list.get_node("InputMapButton")
+@onready var _language_button: Button = _category_list.get_node("LanguageButton")
+
+@onready var _back_button: Button = _box.get_node("BottomButtonsContainer/BackButton")
+@onready var _apply_button: Button = _box.get_node("BottomButtonsContainer/ApplyButton")
 
 @onready var _video_modulate: ColorRect = _video_button.get_node("VideoModulate")
 @onready var _audio_modulate: ColorRect = _audio_button.get_node("AudioModulate")
 @onready var _input_modulate: ColorRect = _input_map_button.get_node("InputModulate")
 @onready var _language_modulate: ColorRect = _language_button.get_node("LanguageModulate")
-
-var _category_modulates: Array[ColorRect]
 
 
 func _ready() -> void:
@@ -43,23 +51,15 @@ func _ready() -> void:
 	_audio_button.mouse_entered.connect(_on_button_mouse_entered.bind(_audio_button))
 	_language_button.mouse_entered.connect(_on_button_mouse_entered.bind(_language_button))
 	_input_map_button.mouse_entered.connect(_on_button_mouse_entered.bind(_input_map_button))
-	$PanelContainer/Margin/Box/BottomButtonsContainer/BackButton.mouse_entered.connect(
-		_on_button_mouse_entered.bind($PanelContainer/Margin/Box/BottomButtonsContainer/BackButton)
-	)
-	$PanelContainer/Margin/Box/BottomButtonsContainer/ApplyButton.mouse_entered.connect(
-		_on_button_mouse_entered.bind($PanelContainer/Margin/Box/BottomButtonsContainer/ApplyButton)
-	)
+	_back_button.mouse_entered.connect(_on_button_mouse_entered.bind(_back_button))
+	_apply_button.mouse_entered.connect(_on_button_mouse_entered.bind(_apply_button))
 
 	_video_button.mouse_exited.connect(_on_button_mouse_exited)
 	_audio_button.mouse_exited.connect(_on_button_mouse_exited)
 	_language_button.mouse_exited.connect(_on_button_mouse_exited)
 	_input_map_button.mouse_exited.connect(_on_button_mouse_exited)
-	$PanelContainer/Margin/Box/BottomButtonsContainer/BackButton.mouse_exited.connect(
-		_on_button_mouse_exited
-	)
-	$PanelContainer/Margin/Box/BottomButtonsContainer/ApplyButton.mouse_exited.connect(
-		_on_button_mouse_exited
-	)
+	_back_button.mouse_exited.connect(_on_button_mouse_exited)
+	_apply_button.mouse_exited.connect(_on_button_mouse_exited)
 
 	GlobalEvents.loading_settings_changed.connect(_on_loading_settings_changed)
 	GlobalEvents.loading_language_changed.connect(_on_loading_language_changed)
@@ -79,74 +79,56 @@ func _update_category_buttons_modulate(active_modulate: ColorRect) -> void:
 
 
 func _on_loading_settings_changed(settings_data: Dictionary) -> void:
-	if (
-		$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/VideoSettings
-		. has_method("_update_ui")
-	):
-		(
-			$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/VideoSettings
-			. _update_ui(settings_data.get("video", {}))
-		)
-	if (
-		$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/AudioSettings
-		. has_method("_update_ui")
-	):
-		(
-			$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/AudioSettings
-			. _update_ui(settings_data.get("audio", {}))
-		)
+	if _video_settings_panel.has_method("_update_ui"):
+		_video_settings_panel._update_ui(settings_data.get("video", {}))
+	if _audio_settings_panel.has_method("_update_ui"):
+		_audio_settings_panel._update_ui(settings_data.get("audio", {}))
 
 
 func _on_loading_language_changed(language_data: Dictionary) -> void:
-	if (
-		$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/LanguageSettings
-		. has_method("_update_ui")
-	):
-		(
-			$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/LanguageSettings
-			. _update_ui(language_data.get("language", {}))
-		)
+	if _language_settings_panel.has_method("_update_ui"):
+		_language_settings_panel._update_ui(language_data.get("language", {}))
+
+
+func _show_category(
+	video_visible: bool, audio_visible: bool, input_map_visible: bool, language_visible: bool
+) -> void:
+	_video_settings_panel.visible = video_visible
+	_audio_settings_panel.visible = audio_visible
+	_input_map_settings_panel.visible = input_map_visible
+	_language_settings_panel.visible = language_visible
+	_video_label.visible = video_visible
+	_audio_label.visible = audio_visible
+	_input_map_label.visible = input_map_visible
+	_language_label.visible = language_visible
 
 
 func _on_video_button_pressed() -> void:
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/VideoSettings.visible = true
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/AudioSettings.visible = false
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/InputMapSettings.visible = false
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/LanguageSettings.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/VideoLabel.visible = true
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/AudioLabel.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/InputMapLabel.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/LanguageLabel.visible = false
+	_show_category(true, false, false, false)
 	_update_category_buttons_modulate(_video_modulate)
 
 
 func _on_audio_button_pressed() -> void:
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/VideoSettings.visible = false
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/AudioSettings.visible = true
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/InputMapSettings.visible = false
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/LanguageSettings.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/VideoLabel.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/AudioLabel.visible = true
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/InputMapLabel.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/LanguageLabel.visible = false
+	_show_category(false, true, false, false)
 	_update_category_buttons_modulate(_audio_modulate)
 
 
 func _on_language_button_pressed() -> void:
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/VideoSettings.visible = false
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/AudioSettings.visible = false
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/InputMapSettings.visible = false
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/LanguageSettings.visible = true
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/VideoLabel.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/AudioLabel.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/InputMapLabel.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/LanguageLabel.visible = true
+	_show_category(false, false, false, true)
 	_update_category_buttons_modulate(_language_modulate)
+
+
+func _on_input_map_button_pressed() -> void:
+	_show_category(false, false, true, false)
+	_update_category_buttons_modulate(_input_modulate)
 
 
 func _on_back_button_pressed() -> void:
 	print(
-		"[OptionsMenu] Botão 'Voltar' pressionado. Revertendo configurações e voltando ao estado anterior."
+		(
+			"[OptionsMenu] Botão 'Voltar' pressionado. "
+			+ "Revertendo configurações e voltando ao estado anterior."
+		)
 	)
 
 	GlobalEvents.request_loading_settings_changed.emit()
@@ -177,18 +159,6 @@ func _on_button_mouse_entered(button: Button) -> void:
 
 func _on_button_mouse_exited() -> void:
 	GlobalEvents.hide_tooltip_requested.emit()
-
-
-func _on_input_map_button_pressed() -> void:
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/VideoSettings.visible = false
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/AudioSettings.visible = false
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/InputMapSettings.visible = true
-	$PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent/LanguageSettings.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/VideoLabel.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/AudioLabel.visible = false
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/InputMapLabel.visible = true
-	$PanelContainer/Margin/Box/UPButtons/LabelContainer/LanguageLabel.visible = false
-	_update_category_buttons_modulate(_input_modulate)
 
 
 func _on_game_state_updated(state_data: Dictionary) -> void:

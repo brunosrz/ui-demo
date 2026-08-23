@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://b6b3hyf5yo03k"
+uid="uid://c6euwxa13dp3w"
 path="res://.godot/imported/sourcehansanstw.otf-209cc879be5a58916ca315e8eb170742.fontdata"
 
 [deps]
@@ -13,23 +13,23 @@ dest_files=["res://.godot/imported/sourcehansanstw.otf-209cc879be5a58916ca315e8e
 [params]
 
 Rendering=null
-antialiasing=2
+antialiasing=1
 generate_mipmaps=false
 disable_embedded_bitmaps=true
-multichannel_signed_distance_field=true
+multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
-hinting=1
-subpixel_positioning=1
+hinting=3
+subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]
 Compress=null
-compress=false
+compress=true
 preload=[]
 language_support={}
 script_support={}

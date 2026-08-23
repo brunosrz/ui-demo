@@ -1,14 +1,16 @@
 class_name SceneManager
 extends Control
 
-@onready var main_menu: Panel = $MenuViewportContainer/GameViewport/Control/MainMenu
-@onready var pause_menu: Panel = $MenuViewportContainer/GameViewport/Control/PauseMenu
-@onready var options_menu: Panel = $MenuViewportContainer/GameViewport/Control/OptionsMenu
+var _scene_stack: Array[Node] = []
+
+@onready var menu_control: Control = $MenuViewportContainer/GameViewport/Control
+@onready var main_menu: Panel = menu_control.get_node("MainMenu")
+@onready var pause_menu: Panel = menu_control.get_node("PauseMenu")
+@onready var options_menu: Panel = menu_control.get_node("OptionsMenu")
 @onready
-var quit_confirmation_dialog: PanelContainer = $MenuViewportContainer/GameViewport/Control/QuitConfirmationDialog
+var quit_confirmation_dialog: PanelContainer = menu_control.get_node("QuitConfirmationDialog")
 
 @onready var game_viewport: SubViewport = $GameViewportContainer/GameViewport
-var _scene_stack: Array[Node] = []
 
 
 func _ready():
@@ -19,7 +21,7 @@ func _ready():
 
 
 func _on_scene_push_requested(path: String):
-	"\n\tCarrega uma nova cena e a adiciona à pilha, ou a traz para frente se já estiver carregada.\n\t"
+	"\n\tCarrega uma cena e a adiciona à pilha, ou a traz para frente se já carregada.\n\t"
 
 	if path.is_empty():
 		printerr("SceneManager: Recebido pedido para carregar cena com caminho vazio.")

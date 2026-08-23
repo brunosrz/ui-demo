@@ -1,10 +1,5 @@
 extends Node
 
-
-func _ready() -> void:
-	print("GlobalEvents: Inicializado.")
-
-
 @warning_ignore("unused_signal")
 signal setting_changed(change_data: Dictionary)
 @warning_ignore("unused_signal")
@@ -124,3 +119,7 @@ signal quest_updated(quest_data: Dictionary)
 
 @warning_ignore("unused_signal")
 signal input_action_triggered(action_data: Dictionary)
+
+
+func _ready() -> void:
+	print("GlobalEvents: Inicializado.")

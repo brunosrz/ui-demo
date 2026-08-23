@@ -15,7 +15,6 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Essentials"
-config/version="0.5.0"
 config/tags=PackedStringArray("2d", "template")
 run/main_scene="uid://bqf02v5eog068"
 config/features=PackedStringArray("4.7", "GL Compatibility")
@@ -72,7 +71,7 @@ toggle_console={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://i18n/pt_br.po", "res://i18n/pt_pt.po", "res://i18n/en_us.po", "res://i18n/en_gb.po", "res://i18n/en_in.po", "res://i18n/es_la.po", "res://i18n/es_es.po", "res://i18n/de.po", "res://i18n/fr.po", "res://i18n/it.po", "res://i18n/ja.po", "res://i18n/ko.po", "res://i18n/ru.po", "res://i18n/zh_hans.po", "res://i18n/zh_hant.po")
+locale/translations=PackedStringArray("res://locale/translations.pt_br.translation", "res://locale/translations.pt_pt.translation", "res://locale/translations.en_us.translation", "res://locale/translations.en_gb.translation", "res://locale/translations.en_in.translation", "res://locale/translations.es_la.translation", "res://locale/translations.es_es.translation", "res://locale/translations.de.translation", "res://locale/translations.fr.translation", "res://locale/translations.it.translation", "res://locale/translations.ja.translation", "res://locale/translations.ko.translation", "res://locale/translations.ru.translation", "res://locale/translations.zh_hans.translation", "res://locale/translations.zh_hant.translation")
 locale/include_text_server_data=true
 locale/fallback="pt_br"
 

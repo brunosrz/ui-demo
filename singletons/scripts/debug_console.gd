@@ -1,11 +1,11 @@
 extends CanvasLayer
 
+var game_version = "0.5.0"
+
 @onready var log_text: RichTextLabel = $Panel/MarginContainer/MainLayout/RightColumn/LogText
 @onready
 var debug_info_text: RichTextLabel = $Panel/MarginContainer/MainLayout/LeftColumn/DebugInfoText
 @onready var log_label: Label = $Panel/MarginContainer/MainLayout/RightColumn/Label
-
-var game_version = "0.5.0"
 
 
 func _ready() -> void:

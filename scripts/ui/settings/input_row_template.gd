@@ -1,13 +1,13 @@
 extends HBoxContainer
 
+signal remap_requested(action: String, input_type: String)
+
+var action_name: String
+
 @onready var action_label: Label = $ActionLabel
 @onready var key_button: Button = $KeyButton
 @onready var controller_button: Button = $ControllerButton
 @onready var mouse_button: Button = $MouseButton
-
-var action_name: String
-
-signal remap_requested(action: String, input_type: String)
 
 
 func _ready() -> void:

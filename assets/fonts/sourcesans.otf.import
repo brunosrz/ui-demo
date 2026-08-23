@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bml1tlmc1m8p"
+uid="uid://bx2rlcexvq8ft"
 path="res://.godot/imported/sourcesans.otf-5ce265411efe49d803745d6ca3587f4c.fontdata"
 
 [deps]
@@ -16,20 +16,20 @@ Rendering=null
 antialiasing=1
 generate_mipmaps=false
 disable_embedded_bitmaps=true
-multichannel_signed_distance_field=true
+multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
-hinting=1
-subpixel_positioning=1
+hinting=3
+subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
-fallbacks=[Resource("uid://brr1rbiafbktj", "res://Assets/Fonts/SourceHanSansJP.otf"), Resource("uid://bdlnoedg1jxi1", "res://Assets/Fonts/SourceHanSansCN.otf"), Resource("uid://g26s0e85rg7a", "res://Assets/Fonts/SourceHanSansHK.otf"), Resource("uid://ck2rs3nt6ql8a", "res://Assets/Fonts/SourceHanSansKR.otf"), Resource("uid://b6b3hyf5yo03k", "res://Assets/Fonts/SourceHanSansTW.otf")]
+fallbacks=[]
 Compress=null
-compress=false
+compress=true
 preload=[]
 language_support={}
 script_support={}

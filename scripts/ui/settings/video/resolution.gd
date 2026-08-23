@@ -1,8 +1,5 @@
 extends HBoxContainer
 
-@onready var option_button: OptionButton = $ResolutionOptionButton
-@onready var resolution_label: Label = $ResolutionLabel
-
 const RESOLUTION_MAP: Dictionary = {
 	1: Vector2i(640, 360),
 	2: Vector2i(854, 480),
@@ -11,6 +8,9 @@ const RESOLUTION_MAP: Dictionary = {
 	5: Vector2i(2560, 1440),
 	6: Vector2i(3840, 2160)
 }
+
+@onready var option_button: OptionButton = $ResolutionOptionButton
+@onready var resolution_label: Label = $ResolutionLabel
 
 
 func _ready() -> void:

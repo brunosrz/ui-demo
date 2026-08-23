@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqf02v5eog068"]
+[gd_scene format=3 uid="uid://bqf02v5eog068"]
 
 [ext_resource type="Script" uid="uid://ceqdowk3eu154" path="res://singletons/scripts/scene_manager.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://cgrv6f7vj3l3g" path="res://scenes/ui/main_menu.tscn" id="2"]
@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://xsfe4eohtxl4" path="res://scenes/ui/options_menu.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://c7ckkfc3bhrkc" path="res://scenes/ui/quit_confirmation_dialog.tscn" id="5"]
 
-[node name="SceneManager" type="Control"]
+[node name="SceneManager" type="Control" unique_id=63420025]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -18,7 +18,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1")
 
-[node name="GameViewportContainer" type="SubViewportContainer" parent="."]
+[node name="GameViewportContainer" type="SubViewportContainer" parent="." unique_id=1141920376]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -34,7 +34,7 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="GameViewport" type="SubViewport" parent="GameViewportContainer"]
+[node name="GameViewport" type="SubViewport" parent="GameViewportContainer" unique_id=1173612007]
 disable_3d = true
 transparent_bg = true
 handle_input_locally = false
@@ -43,7 +43,7 @@ audio_listener_enable_2d = true
 size = Vector2i(1280, 720)
 render_target_update_mode = 4
 
-[node name="MenuViewportContainer" type="SubViewportContainer" parent="."]
+[node name="MenuViewportContainer" type="SubViewportContainer" parent="." unique_id=707904075]
 custom_minimum_size = Vector2(1280, 720)
 layout_mode = 1
 anchors_preset = 15
@@ -55,7 +55,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 stretch = true
 
-[node name="GameViewport" type="SubViewport" parent="MenuViewportContainer"]
+[node name="GameViewport" type="SubViewport" parent="MenuViewportContainer" unique_id=2052834460]
 disable_3d = true
 transparent_bg = true
 handle_input_locally = false
@@ -64,7 +64,7 @@ audio_listener_enable_2d = true
 size = Vector2i(1280, 720)
 render_target_update_mode = 4
 
-[node name="Control" type="Control" parent="MenuViewportContainer/GameViewport"]
+[node name="Control" type="Control" parent="MenuViewportContainer/GameViewport" unique_id=1309526204]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -72,23 +72,27 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MainMenu" parent="MenuViewportContainer/GameViewport/Control" instance=ExtResource("2")]
+[node name="MainMenu" parent="MenuViewportContainer/GameViewport/Control" unique_id=1331894972 instance=ExtResource("2")]
 layout_mode = 1
+anchors_preset = 15
 
-[node name="PauseMenu" parent="MenuViewportContainer/GameViewport/Control" instance=ExtResource("3")]
+[node name="PauseMenu" parent="MenuViewportContainer/GameViewport/Control" unique_id=334218990 instance=ExtResource("3")]
 visible = false
 z_index = 10
 layout_mode = 1
+anchors_preset = 15
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="OptionsMenu" parent="MenuViewportContainer/GameViewport/Control" instance=ExtResource("4")]
+[node name="OptionsMenu" parent="MenuViewportContainer/GameViewport/Control" unique_id=1328120152 instance=ExtResource("4")]
 visible = false
 layout_mode = 1
+anchors_preset = 15
 
-[node name="QuitConfirmationDialog" parent="MenuViewportContainer/GameViewport/Control" instance=ExtResource("5")]
+[node name="QuitConfirmationDialog" parent="MenuViewportContainer/GameViewport/Control" unique_id=1856795280 instance=ExtResource("5")]
 visible = false
 z_index = 10
 layout_mode = 1
+anchors_preset = 8
 size_flags_horizontal = 4
 size_flags_vertical = 4

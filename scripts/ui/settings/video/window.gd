@@ -14,20 +14,20 @@ func _ready() -> void:
 
 
 func _on_window_mode_option_button_item_selected(index: int) -> void:
-	var _mode: int
+	var mode: int
 
 	match index:
 		0:
-			_mode = 0
+			mode = 0
 		1:
-			_mode = 2
+			mode = 2
 		2:
-			_mode = 3
+			mode = 3
 		_:
 			push_warning("Modo de janela desconhecido selecionado: " + str(index))
 			return
 
-	GlobalEvents.emit_signal("setting_changed", {"video": {"window_mode": _mode}})
+	GlobalEvents.emit_signal("setting_changed", {"video": {"window_mode": mode}})
 
 
 func _on_loading_settings_changed(settings: Dictionary) -> void:

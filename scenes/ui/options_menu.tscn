@@ -90,7 +90,7 @@ text = "UI_AUDIO_OPTIONS"
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 22
-text = "UI_AUDIO_OPTIONS"
+text = "UI_INPUTMAP_OPTIONS"
 
 [node name="LanguageLabel" type="Label" parent="PanelContainer/Margin/Box/UPButtons/LabelContainer"]
 visible = false

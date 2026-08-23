@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ceissqt75h2hq"
+
+[deps]
+
+files=["res://locale/translations.de.translation", "res://locale/translations.en_gb.translation", "res://locale/translations.en_in.translation", "res://locale/translations.en_us.translation", "res://locale/translations.es_es.translation", "res://locale/translations.es_la.translation", "res://locale/translations.fr.translation", "res://locale/translations.it.translation", "res://locale/translations.ja.translation", "res://locale/translations.ko.translation", "res://locale/translations.pt_br.translation", "res://locale/translations.pt_pt.translation", "res://locale/translations.ru.translation", "res://locale/translations.zh_hans.translation", "res://locale/translations.zh_hant.translation"]
+
+source_file="res://locale/translations.csv"
+dest_files=["res://locale/translations.de.translation", "res://locale/translations.en_gb.translation", "res://locale/translations.en_in.translation", "res://locale/translations.en_us.translation", "res://locale/translations.es_es.translation", "res://locale/translations.es_la.translation", "res://locale/translations.fr.translation", "res://locale/translations.it.translation", "res://locale/translations.ja.translation", "res://locale/translations.ko.translation", "res://locale/translations.pt_br.translation", "res://locale/translations.pt_pt.translation", "res://locale/translations.ru.translation", "res://locale/translations.zh_hans.translation", "res://locale/translations.zh_hant.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

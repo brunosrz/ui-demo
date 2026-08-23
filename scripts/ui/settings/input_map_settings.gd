@@ -38,4 +38,3 @@ func _on_reset_button_pressed() -> void:
 
 func _on_input_rebind_requested(category: String, action: String) -> void:
 	print("Remapear: ", category, ".", action)
-	pass

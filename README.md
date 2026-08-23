@@ -13,7 +13,7 @@ partida limpo.
   idioma e mapeamento de controles, todas persistidas via `SettingsManager`.
 - **Áudio**: música e efeitos sonoros via o addon [SoundSys](addons/sound_system),
   com biblioteca de SFX/música já inclusa.
-- **Internacionalização**: 15 locales prontos em `i18n/` (`pt_br`, `en_us`,
+- **Internacionalização**: 15 locales prontos em `locale/` (`pt_br`, `en_us`,
   `es_es`, `fr`, `de`, `ja`, `ko`, `ru`, chinês simplificado/tradicional,
   entre outros).
 - **Componentes de UI reutilizáveis**: tooltip, popover, toast e coachmark
@@ -39,7 +39,7 @@ scripts/        Scripts das cenas de UI
 singletons/     Autoloads (scripts + cenas)
 assets/         Fontes e sprites
 resources/      Recursos compartilhados (ex: bus layout de áudio)
-i18n/           Arquivos de tradução (.po)
+locale/         Arquivos de tradução (.csv + .translation)
 addons/         Plugins, incluindo o SoundSys
 ```
 

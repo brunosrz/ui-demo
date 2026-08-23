@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://wkhmjk6n3145"]
+
+[ext_resource type="Script" uid="uid://bvex6s21m3537" path="res://scripts/ui/components/popover.gd" id="1"]
+
+[node name="popover" type="PanelContainer"]
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2

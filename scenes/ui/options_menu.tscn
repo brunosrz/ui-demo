@@ -1,0 +1,330 @@
+[gd_scene load_steps=11 format=3 uid="uid://xsfe4eohtxl4"]
+
+[ext_resource type="StyleBox" uid="uid://clbbsxi0r0l6k" path="res://resources/panel.tres" id="1"]
+[ext_resource type="Script" uid="uid://bn5pjvf7wbdv4" path="res://scripts/ui/options_menu.gd" id="2"]
+[ext_resource type="StyleBox" uid="uid://5qc4dawypfba" path="res://resources/panel2.tres" id="3"]
+[ext_resource type="FontFile" uid="uid://bml1tlmc1m8p" path="res://assets/fonts/sourcesans.otf" id="4"]
+[ext_resource type="StyleBox" uid="uid://ccucsa8kk57ft" path="res://resources/button_focus.tres" id="5"]
+[ext_resource type="StyleBox" uid="uid://bej76kq62gywe" path="res://resources/button_normal.tres" id="6"]
+[ext_resource type="PackedScene" uid="uid://b8n0le3mmhafb" path="res://scenes/ui/settings/video_settings.tscn" id="7"]
+[ext_resource type="PackedScene" uid="uid://dat2iwiarvvxj" path="res://scenes/ui/settings/audio_settings.tscn" id="8"]
+[ext_resource type="PackedScene" uid="uid://cvtlqfm3228xb" path="res://scenes/ui/settings/input_map_settings.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://bey3t3k4biaww" path="res://scenes/ui/settings/language_settings.tscn" id="10"]
+
+[node name="OptionsMenu" type="Panel"]
+process_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = ExtResource("1")
+script = ExtResource("2")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -460.0
+offset_top = -260.0
+offset_right = 460.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("3")
+
+[node name="Margin" type="MarginContainer" parent="PanelContainer"]
+texture_filter = 2
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="Box" type="VBoxContainer" parent="PanelContainer/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="UPButtons" type="HBoxContainer" parent="PanelContainer/Margin/Box"]
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="TitleLabel" type="Label" parent="PanelContainer/Margin/Box/UPButtons"]
+custom_minimum_size = Vector2(254, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 28
+text = "UI_SETTINGS_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="PanelContainer/Margin/Box/UPButtons"]
+layout_mode = 2
+
+[node name="LabelContainer" type="VBoxContainer" parent="PanelContainer/Margin/Box/UPButtons"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+alignment = 1
+
+[node name="VideoLabel" type="Label" parent="PanelContainer/Margin/Box/UPButtons/LabelContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 22
+text = "UI_VIDEO_OPTIONS"
+vertical_alignment = 1
+
+[node name="AudioLabel" type="Label" parent="PanelContainer/Margin/Box/UPButtons/LabelContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "UI_AUDIO_OPTIONS"
+
+[node name="InputMapLabel" type="Label" parent="PanelContainer/Margin/Box/UPButtons/LabelContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "UI_AUDIO_OPTIONS"
+
+[node name="LanguageLabel" type="Label" parent="PanelContainer/Margin/Box/UPButtons/LabelContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "UI_LANGUAGE_OPTIONS"
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/Margin/Box"]
+layout_mode = 2
+
+[node name="ContentHBox" type="HBoxContainer" parent="PanelContainer/Margin/Box"]
+clip_contents = true
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="ScrollList" type="ScrollContainer" parent="PanelContainer/Margin/Box/ContentHBox"]
+custom_minimum_size = Vector2(254, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="CategoryList" type="VBoxContainer" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="VideoButton" type="Button" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4")
+theme_override_styles/focus = ExtResource("5")
+theme_override_styles/hover_pressed = ExtResource("5")
+theme_override_styles/hover = ExtResource("5")
+theme_override_styles/pressed = ExtResource("5")
+theme_override_styles/normal = ExtResource("6")
+text = "UI_VIDEO"
+
+[node name="VideoModulate" type="ColorRect" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/VideoButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0.156863)
+metadata/_edit_lock_ = true
+
+[node name="AudioButton" type="Button" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4")
+theme_override_styles/focus = ExtResource("5")
+theme_override_styles/hover_pressed = ExtResource("5")
+theme_override_styles/hover = ExtResource("5")
+theme_override_styles/pressed = ExtResource("5")
+theme_override_styles/normal = ExtResource("6")
+text = "UI_AUDIO"
+
+[node name="AudioModulate" type="ColorRect" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/AudioButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="InputMapButton" type="Button" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4")
+theme_override_styles/focus = ExtResource("5")
+theme_override_styles/hover_pressed = ExtResource("5")
+theme_override_styles/hover = ExtResource("5")
+theme_override_styles/pressed = ExtResource("5")
+theme_override_styles/normal = ExtResource("6")
+text = "UI_INPUTMAP"
+
+[node name="InputModulate" type="ColorRect" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/InputMapButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="LanguageButton" type="Button" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4")
+theme_override_styles/focus = ExtResource("5")
+theme_override_styles/hover_pressed = ExtResource("5")
+theme_override_styles/hover = ExtResource("5")
+theme_override_styles/pressed = ExtResource("5")
+theme_override_styles/normal = ExtResource("6")
+text = "UI_LANGUAGE"
+
+[node name="LanguageModulate" type="ColorRect" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/LanguageButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="Spacer" type="Control" parent="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VSeparator" type="VSeparator" parent="PanelContainer/Margin/Box/ContentHBox"]
+layout_mode = 2
+
+[node name="ScrollContent" type="ScrollContainer" parent="PanelContainer/Margin/Box/ContentHBox"]
+clip_contents = false
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_scroll_mode = 0
+
+[node name="CategoryContent" type="VBoxContainer" parent="PanelContainer/Margin/Box/ContentHBox/ScrollContent"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+
+[node name="VideoSettings" parent="PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent" instance=ExtResource("7")]
+layout_mode = 2
+
+[node name="AudioSettings" parent="PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent" instance=ExtResource("8")]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InputMapSettings" parent="PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent" instance=ExtResource("9")]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LanguageSettings" parent="PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent" instance=ExtResource("10")]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Spacer" type="Control" parent="PanelContainer/Margin/Box/ContentHBox/ScrollContent/CategoryContent"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSeparator2" type="HSeparator" parent="PanelContainer/Margin/Box"]
+layout_mode = 2
+
+[node name="BottomButtonsContainer" type="HBoxContainer" parent="PanelContainer/Margin/Box"]
+custom_minimum_size = Vector2(0, 36)
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/separation = 16
+alignment = 2
+
+[node name="BackButton" type="Button" parent="PanelContainer/Margin/Box/BottomButtonsContainer"]
+custom_minimum_size = Vector2(254, 0)
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4")
+theme_override_styles/focus = ExtResource("5")
+theme_override_styles/hover_pressed = ExtResource("5")
+theme_override_styles/hover = ExtResource("5")
+theme_override_styles/pressed = ExtResource("5")
+theme_override_styles/normal = ExtResource("6")
+text = "UI_BACK"
+
+[node name="BackRect" type="ColorRect" parent="PanelContainer/Margin/Box/BottomButtonsContainer/BackButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="VSeparator" type="VSeparator" parent="PanelContainer/Margin/Box/BottomButtonsContainer"]
+layout_mode = 2
+
+[node name="ApplyButton" type="Button" parent="PanelContainer/Margin/Box/BottomButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+theme_override_fonts/font = ExtResource("4")
+theme_override_styles/focus = ExtResource("5")
+theme_override_styles/hover_pressed = ExtResource("5")
+theme_override_styles/hover = ExtResource("5")
+theme_override_styles/pressed = ExtResource("5")
+theme_override_styles/normal = ExtResource("6")
+text = "UI_APPLY"
+
+[node name="ApplyRect" type="ColorRect" parent="PanelContainer/Margin/Box/BottomButtonsContainer/ApplyButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/VideoButton" to="." method="_on_video_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/AudioButton" to="." method="_on_audio_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/InputMapButton" to="." method="_on_input_map_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Margin/Box/ContentHBox/ScrollList/CategoryList/LanguageButton" to="." method="_on_language_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Margin/Box/BottomButtonsContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="PanelContainer/Margin/Box/BottomButtonsContainer/ApplyButton" to="." method="_on_apply_button_pressed"]

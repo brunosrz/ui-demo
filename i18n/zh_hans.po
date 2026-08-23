@@ -1,0 +1,778 @@
+# Chinese translations
+# Copyright (C) 2025 Cafe-bruno.soarxzGameDev
+# This file is distributed under the same license as the BodyLess project.
+# FIRST AUTHOR <bruno.soarxz@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BodyLess\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-13 15:00-0300\n"
+"PO-Revision-Date: 2025-08-24 10:00-0300\n"
+"Last-Translator: FULL NAME <bruno.soarxz@gmail.com>\n"
+"Language-Team: Chinese\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gemini\n"
+
+msgid "UI_MAIN_MENU_TITLE"
+msgstr "布鲁诺的模板"
+
+msgid "UI_NEW_GAME"
+msgstr "新游戏"
+
+msgid "UI_OPTIONS"
+msgstr "选项"
+
+msgid "UI_EXIT"
+msgstr "退出"
+
+msgid "UI_PAUSE_MENU_TITLE"
+msgstr "已暂停"
+
+msgid "UI_RESUME_GAME"
+msgstr "继续游戏"
+
+msgid "UI_QUIT_CONFIRMATION_PROMPT"
+msgstr "您确定要退出吗？"
+
+msgid "UI_YES"
+msgstr "是"
+
+msgid "UI_NO"
+msgstr "否"
+
+msgid "UI_SETTINGS_TITLE"
+msgstr "设置"
+
+msgid "UI_VIDEO"
+msgstr "视频"
+
+msgid "UI_AUDIO"
+msgstr "音频"
+
+msgid "UI_BACK"
+msgstr "返回"
+
+msgid "UI_VIDEO_OPTIONS"
+msgstr "视频选项"
+
+msgid "UI_FULLSCREEN"
+msgstr "全屏"
+
+msgid "UI_AUDIO_OPTIONS"
+msgstr "音频选项"
+
+msgid "UI_MASTER_VOLUME"
+msgstr "主音量"
+
+msgid "UI_MUSIC_VOLUME"
+msgstr "音乐"
+
+msgid "UI_SFX_VOLUME"
+msgstr "音效"
+
+msgid "UI_APPLY"
+msgstr "应用"
+
+msgid "UI_LANGUAGE"
+msgstr "语言"
+
+msgid "UI_LANGUAGE_OPTIONS"
+msgstr "语言选项"
+
+msgid "DEBUG_CONSOLE_READY"
+msgstr "调试控制台已就绪。按 'P' 切换。"
+
+msgid "DEBUG_LOG_TITLE"
+msgstr "全局事件日志"
+
+msgid "DEBUG_GAME_SECTION"
+msgstr "[b]游戏[/b]"
+
+msgid "DEBUG_GAME_VERSION"
+msgstr "  游戏版本: "
+
+msgid "DEBUG_GAME_STATE"
+msgstr "  状态: {state}"
+
+msgid "DEBUG_CURRENT_SCENE"
+msgstr "  当前场景: {scene}"
+
+msgid "DEBUG_LAST_SAVE"
+msgstr "  上次保存: 不适用"
+
+msgid "DEBUG_SYSTEM_SECTION"
+msgstr "[b]系统[/b]"
+
+msgid "DEBUG_OS"
+msgstr "  操作系统: {os}"
+
+msgid "DEBUG_DISPLAY_SECTION"
+msgstr "[b]显示[/b]"
+
+msgid "DEBUG_MONITOR"
+msgstr "  显示器: {monitor}"
+
+msgid "DEBUG_MONITOR_INFO"
+msgstr "显示器 {id}: {size} @ {hz}Hz"
+
+msgid "DEBUG_SIGNAL_RECEIVED"
+msgstr "收到信号 '{signal}'"
+
+msgid "DEBUG_WITH_ARGS"
+msgstr " 带参数: {{args}}"
+
+msgid "UI_MONITOR"
+msgstr "显示器"
+
+msgid "UI_WINDOW_MODE_WINDOWED"
+msgstr "窗口模式"
+
+msgid "UI_WINDOW_MODE_FULLSCREEN"
+msgstr "全屏"
+
+msgid "UI_WINDOW_MODE_BORDERLESS"
+msgstr "无边框窗口"
+
+msgid "UI_RESOLUTION"
+msgstr "分辨率"
+
+msgid "DEBUG_PROCESSOR"
+msgstr "  处理器: {processor}"
+
+msgid "DEBUG_CORES"
+msgstr "  核心: {cores}"
+
+msgid "DEBUG_RAM"
+msgstr "  内存: {ram}"
+
+msgid "DEBUG_VIDEO_ADAPTER"
+msgstr "  显卡: {adapter}"
+
+msgid "DEBUG_VIDEO_DRIVER"
+msgstr "  显卡驱动: {driver}"
+
+msgid "DEBUG_VIDEO_RENDERER"
+msgstr "  视频渲染器: {renderer}"
+
+msgid "UI_DRS_OFF"
+msgstr "关闭"
+
+msgid "UI_DRS_CUSTOM"
+msgstr "自定义"
+
+msgid "UI_FPS_CUSTOM"
+msgstr "自定义"
+
+msgid "UI_VSYNC_OFF"
+msgstr "关闭"
+
+msgid "UI_VSYNC_ON"
+msgstr "开启"
+
+msgid "UI_VSYNC_ADAPTIVE"
+msgstr "自适应"
+
+msgid "UI_QUALITY_LOW"
+msgstr "低"
+
+msgid "UI_QUALITY_MEDIUM"
+msgstr "中"
+
+msgid "UI_QUALITY_HIGH"
+msgstr "高"
+
+msgid "UI_COLORBLIND_OFF"
+msgstr "关闭"
+
+msgid "UI_COLORBLIND_PROTANOPIA"
+msgstr "红色盲"
+
+msgid "UI_COLORBLIND_DEUTERANOPIA"
+msgstr "绿色盲"
+
+msgid "UI_COLORBLIND_TRITANOPIA"
+msgstr "蓝色盲"
+
+msgid "UI_LANGUAGE_EN_US"
+msgstr "英语 (美国)"
+
+msgid "UI_LANGUAGE_EN_GB"
+msgstr "英语 (英国)"
+
+msgid "UI_LANGUAGE_PT_BR"
+msgstr "葡萄牙语 (巴西)"
+
+msgid "UI_LANGUAGE_PT_PT"
+msgstr "葡萄牙语 (葡萄牙)"
+
+msgid "UI_LANGUAGE_ES_ES"
+msgstr "西班牙语 (西班牙)"
+
+msgid "UI_LANGUAGE_ES_LA"
+msgstr "西班牙语 (美洲)"
+
+msgid "UI_LANGUAGE_FR"
+msgstr "法语"
+
+msgid "UI_LANGUAGE_DE"
+msgstr "德语"
+
+msgid "UI_LANGUAGE_IT"
+msgstr "意大利语"
+
+msgid "UI_LANGUAGE_NL"
+msgstr "荷兰语"
+
+msgid "UI_LANGUAGE_JA"
+msgstr "日语"
+
+msgid "UI_LANGUAGE_KO"
+msgstr "韩语"
+
+msgid "UI_LANGUAGE_RU"
+msgstr "俄语"
+
+msgid "UI_LANGUAGE_ZH"
+msgstr "中文"
+
+msgid "UI_LANGUAGE_EN_IN"
+msgstr "英语 (印度)"
+
+msgid "UI_LANGUAGE_ZH_HANS"
+msgstr "中文 (简体)"
+
+msgid "UI_LANGUAGE_ZH_HANT"
+msgstr "中文 (繁体)"
+
+msgid "UI_LANGUAGE_SW"
+msgstr "斯瓦希里语"
+
+msgid "UI_LANGUAGE_AF"
+msgstr "南非荷兰语"
+
+msgid "UI_LANGUAGE_PL"
+msgstr "波兰语"
+
+msgid "UI_LANGUAGE_TR"
+msgstr "土耳其语"
+
+msgid "UI_LANGUAGE_HI"
+msgstr "印地语"
+
+msgid "UI_LANGUAGE_ID"
+msgstr "印度尼西亚语"
+
+msgid "UI_LANGUAGE_VI"
+msgstr "越南语"
+
+msgid "UI_LANGUAGE_AR"
+msgstr "阿拉伯语"
+
+msgid "UI_LANGUAGE_FIL"
+msgstr "菲律宾语"
+
+msgid "UI_LANGUAGE_HA"
+msgstr "豪萨语"
+
+msgid "UI_LANGUAGE_AM"
+msgstr "阿姆哈拉语"
+
+msgid "UI_LANGUAGE_YO"
+msgstr "约鲁巴语"
+
+msgid "UI_LANGUAGE_BN"
+msgstr "孟加拉语"
+
+msgid "TOOLTIP_GAMMA_CORRECTION_TITLE"
+msgstr "伽马校正"
+
+msgid "TOOLTIP_GAMMA_CORRECTION_DESC"
+msgstr "调整游戏视觉效果的整体亮度和对比度。"
+
+msgid "TOOLTIP_MASTER_VOLUME_TITLE"
+msgstr "主音量"
+
+msgid "TOOLTIP_MASTER_VOLUME_DESC"
+msgstr "控制游戏整体音量。"
+
+msgid "TOOLTIP_MUSIC_VOLUME_TITLE"
+msgstr "音乐音量"
+
+msgid "TOOLTIP_MUSIC_VOLUME_DESC"
+msgstr "控制游戏内音乐音量。"
+
+msgid "TOOLTIP_SFX_VOLUME_TITLE"
+msgstr "音效音量"
+
+msgid "TOOLTIP_SFX_VOLUME_DESC"
+msgstr "控制音效音量。"
+
+msgid "TOOLTIP_MONITOR_TITLE"
+msgstr "显示器选择"
+
+msgid "TOOLTIP_MONITOR_DESC"
+msgstr "选择游戏将在哪个显示器上运行。"
+
+msgid "TOOLTIP_WINDOW_MODE_TITLE"
+msgstr "窗口模式"
+
+msgid "TOOLTIP_WINDOW_MODE_DESC"
+msgstr "更改游戏窗口的显示方式（窗口化、全屏、无边框）。"
+
+msgid "TOOLTIP_RESOLUTION_TITLE"
+msgstr "分辨率"
+
+msgid "TOOLTIP_RESOLUTION_DESC"
+msgstr "设置游戏显示分辨率。"
+
+msgid "TOOLTIP_ASPECT_RATIO_TITLE"
+msgstr "宽高比"
+
+msgid "TOOLTIP_ASPECT_RATIO_DESC"
+msgstr "调整屏幕宽高比（例如：16:9，4:3）。"
+
+msgid "TOOLTIP_DYNAMIC_RENDER_SCALE_TITLE"
+msgstr "动态渲染缩放"
+
+msgid "TOOLTIP_DYNAMIC_RENDER_SCALE_DESC"
+msgstr "动态调整渲染分辨率以获得更好的性能。"
+
+msgid "TOOLTIP_RENDER_SCALE_TITLE"
+msgstr "渲染缩放"
+
+msgid "TOOLTIP_RENDER_SCALE_DESC"
+msgstr "手动调整内部渲染分辨率。"
+
+msgid "TOOLTIP_FRAME_RATE_LIMIT_TITLE"
+msgstr "帧率限制"
+
+msgid "TOOLTIP_FRAME_RATE_LIMIT_DESC"
+msgstr "设置游戏每秒渲染的最大帧数。"
+
+msgid "TOOLTIP_MAX_FRAME_RATE_TITLE"
+msgstr "最大帧率"
+
+msgid "TOOLTIP_MAX_FRAME_RATE_DESC"
+msgstr "当自定义限制启用时，设置特定的最大帧率。"
+
+msgid "TOOLTIP_VSYNC_MODE_TITLE"
+msgstr "垂直同步模式"
+
+msgid "TOOLTIP_VSYNC_MODE_DESC"
+msgstr "将帧与显示器刷新率同步，以防止'屏幕撕裂'。"
+
+msgid "TOOLTIP_CONTRAST_TITLE"
+msgstr "对比度"
+
+msgid "TOOLTIP_CONTRAST_DESC"
+msgstr "调整亮区和暗区之间的差异。"
+
+msgid "TOOLTIP_BRIGHTNESS_TITLE"
+msgstr "亮度"
+
+msgid "TOOLTIP_BRIGHTNESS_DESC"
+msgstr "调整游戏整体亮度。"
+
+msgid "TOOLTIP_SHADERS_QUALITY_TITLE"
+msgstr "着色器质量"
+
+msgid "TOOLTIP_SHADERS_QUALITY_DESC"
+msgstr "定义着色器的视觉质量。"
+
+msgid "TOOLTIP_EFFECTS_QUALITY_TITLE"
+msgstr "效果质量"
+
+msgid "TOOLTIP_EFFECTS_QUALITY_DESC"
+msgstr "定义特殊效果的视觉质量。"
+
+msgid "TOOLTIP_COLORBLIND_MODE_TITLE"
+msgstr "色盲模式"
+
+msgid "TOOLTIP_COLORBLIND_MODE_DESC"
+msgstr "应用色盲滤镜（红色盲、绿色盲、蓝色盲）。"
+
+msgid "TOOLTIP_REDUCE_SCREEN_SHAKE_TITLE"
+msgstr "减少屏幕抖动"
+
+msgid "TOOLTIP_REDUCE_SCREEN_SHAKE_DESC"
+msgstr "减少屏幕抖动效果的强度。"
+
+msgid "TOOLTIP_UI_SCALE_TITLE"
+msgstr "UI缩放"
+
+msgid "TOOLTIP_UI_SCALE_DESC"
+msgstr "调整用户界面元素的大小。"
+
+msgid "ITEM_HEALING_POTION_NAME"
+msgstr "治疗药水"
+
+msgid "ITEM_HEALING_POTION_DESC"
+msgstr "恢复一部分生命值。"
+
+msgid "ITEM_DAMAGE_BOOST_NAME"
+msgstr "伤害增益药水"
+
+msgid "ITEM_DAMAGE_BOOST_DESC"
+msgstr "暂时增加你的攻击伤害。"
+
+msgid "ITEM_GENERIC_NAME"
+msgstr "通用物品"
+
+msgid "ITEM_GENERIC_DESC"
+msgstr "一个占位符物品。"
+
+msgid "WEAPON_PUNCH_NAME"
+msgstr "拳击"
+
+msgid "WEAPON_PUNCH_DESC"
+msgstr "你的基本近战攻击。"
+
+msgid "WEAPON_SWORD_NAME"
+msgstr "剑"
+
+msgid "WEAPON_SWORD_DESC"
+msgstr "用于近战的锋利刀刃。"
+
+msgid "WEAPON_BOW_NAME"
+msgstr "弓"
+
+msgid "WEAPON_BOW_DESC"
+msgstr "用于无声击杀的远程武器。"
+
+msgid "WEAPON_PISTOL_NAME"
+msgstr "手枪"
+
+msgid "WEAPON_PISTOL_DESC"
+msgstr "用于快速射击的可靠手枪。"
+
+msgid "WEAPON_GRENADE_NAME"
+msgstr "手榴弹"
+
+msgid "WEAPON_GRENADE_DESC"
+msgstr "用于区域伤害的爆炸装置。"
+
+msgid "WEAPON_MACHINE_GUN_NAME"
+msgstr "机枪"
+
+msgid "WEAPON_MACHINE_GUN_DESC"
+msgstr "高射速，近距离破坏力强。"
+
+msgid "ENEMY_DUMMY_NAME"
+msgstr "训练假人"
+
+msgid "ENEMY_DUMMY_DESC"
+msgstr "一个用于练习的静止目标。"
+
+msgid "ENEMY_PATROL_BOT_NAME"
+msgstr "巡逻机器人"
+
+msgid "ENEMY_PATROL_BOT_DESC"
+msgstr "一个巡逻固定路径的机器人。"
+
+msgid "ENEMY_HUNTER_NAME"
+msgstr "猎人"
+
+msgid "ENEMY_HUNTER_DESC"
+msgstr "一个积极追逐玩家的敏捷敌人。"
+
+msgid "UI_INVENTORY_TITLE"
+msgstr "库存"
+
+msgid "UI_INVENTORY_USE_BUTTON"
+msgstr "使用"
+
+msgid "UI_INVENTORY_DROP_BUTTON"
+msgstr "丢弃"
+
+msgid "UI_INVENTORY_EMPTY_SLOT"
+msgstr "空槽"
+
+msgid "UI_HEALTH"
+msgstr "生命值"
+
+msgid "UI_AMMO"
+msgstr "弹药"
+
+msgid "UI_RELOAD_PROMPT"
+msgstr "按 R 重新装弹"
+
+msgid "TOAST_SETTINGS_SAVED_TITLE"
+msgstr "设置已保存"
+
+msgid "TOAST_SETTINGS_SAVED_MESSAGE"
+msgstr "您的游戏设置已保存。"
+
+msgid "TOAST_ITEM_COLLECTED_TITLE"
+msgstr "物品已收集"
+
+msgid "TOAST_ITEM_COLLECTED_MESSAGE"
+msgstr "你捡到了一件物品！"
+
+msgid "TOAST_ERROR_SAVE_FAILED_TITLE"
+msgstr "保存失败"
+
+msgid "TOAST_ERROR_SAVE_FAILED_MESSAGE"
+msgstr "保存游戏进度失败。"
+
+msgid "POPOVER_CONFIRM_USE_ITEM_TITLE"
+msgstr "确认使用"
+
+msgid "POPOVER_CONFIRM_USE_ITEM_MESSAGE"
+msgstr "您确定要使用此物品吗？"
+
+msgid "POPOVER_YES"
+msgstr "是"
+
+msgid "POPOVER_NO"
+msgstr "否"
+
+msgid "COACH_MARK_WELCOME_TITLE"
+msgstr "欢迎！"
+
+msgid "COACH_MARK_WELCOME_MESSAGE"
+msgstr "欢迎来到游戏！让我们学习基础知识。"
+
+msgid "COACH_MARK_MOVEMENT_TITLE"
+msgstr "移动"
+
+msgid "COACH_MARK_MOVEMENT_MESSAGE"
+msgstr "使用 WASD 或左摇杆移动。"
+
+msgid "COACH_MARK_PAUSE_TITLE"
+msgstr "暂停游戏"
+
+msgid "COACH_MARK_PAUSE_MESSAGE"
+msgstr "按 ESC 或 Start 暂停游戏并访问菜单。"
+
+msgid "COACH_MARK_INVENTORY_TITLE"
+msgstr "库存"
+
+msgid "COACH_MARK_INVENTORY_MESSAGE"
+msgstr "按 E 或 Select 打开你的库存。"
+
+msgid "COACH_MARK_SKIP_BUTTON"
+msgstr "跳过教程"
+
+msgid "COACH_MARK_NEXT_BUTTON"
+msgstr "下一步"
+
+msgid "INPUT_INVENTORY_NAME"
+msgstr "库存"
+
+msgid "INPUT_RELOAD_NAME"
+msgstr "重新装弹"
+
+msgid "INPUT_SPECIAL_NAME"
+msgstr "特殊能力"
+
+msgid "INPUT_SPRINT_NAME"
+msgstr "冲刺"
+
+msgid "INPUT_CROUCH_NAME"
+msgstr "蹲伏"
+
+msgid "INPUT_MOVE_LEFT_NAME"
+msgstr "向左移动"
+
+msgid "INPUT_MOVE_RIGHT_NAME"
+msgstr "向右移动"
+
+msgid "INPUT_MOVE_UP_NAME"
+msgstr "向上移动"
+
+msgid "INPUT_MOVE_DOWN_NAME"
+msgstr "向下移动"
+
+msgid "INPUT_JUMP_NAME"
+msgstr "跳跃"
+
+msgid "INPUT_ATTACK_NAME"
+msgstr "攻击"
+
+msgid "TOAST_LOAD_SUCCESS_MESSAGE"
+msgstr "游戏加载成功！"
+
+msgid "TOAST_ERROR_LOAD_FAILED_MESSAGE"
+msgstr "加载游戏进度失败。"
+
+msgid "TOAST_ITEM_USED_MESSAGE"
+msgstr "物品已使用：{item_name}！"
+
+msgid "TOAST_ITEM_EQUIPPED_MESSAGE"
+msgstr "物品已装备：{item_name}！"
+
+msgid "UI_ASPECT_RATIO"
+msgstr "宽高比"
+
+msgid "UI_UPSCALE_MODE"
+msgstr "升频模式"
+
+msgid "UI_UPSCALING_QUALITY"
+msgstr "升频质量"
+
+msgid "UI_UPSCALING_NONE"
+msgstr "无"
+
+msgid "UI_FSR_BALANCED"
+msgstr "FSR 平衡"
+
+msgid "UI_UPSCALE_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_UPSCALE_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_CHANGE_GAME"
+msgstr "更换游戏"
+
+msgid "UI_ASPECT_FREE"
+msgstr "自由"
+
+msgid "UI_ASPECT_KEEP"
+msgstr "保持宽高比"
+
+msgid "UI_ASPECT_KEEP_WIDTH"
+msgstr "保持宽度"
+
+msgid "UI_ASPECT_KEEP_HEIGHT"
+msgstr "保持高度"
+
+msgid "UI_ASPECT_EXPAND"
+msgstr "扩展"
+
+msgid "UI_DYNAMIC_RENDER_NONE"
+msgstr "无"
+
+msgid "UI_DYNAMIC_RENDER_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_DYNAMIC_RENDER_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_FRAME_RATE_NO_LIMIT"
+msgstr "无限制"
+
+msgid "UI_FRAME_RATE_VSYNC"
+msgstr "垂直同步"
+
+msgid "UI_FRAME_RATE_ADAPTIVE_VSYNC"
+msgstr "自适应垂直同步"
+
+msgid "UI_FRAME_RATE_CUSTOM"
+msgstr "自定义"
+
+msgid "UI_VSYNC_ENABLED"
+msgstr "已启用"
+
+msgid "UI_VSYNC_DISABLED"
+msgstr "已禁用"
+
+msgid "UI_COLORBLIND_NONE"
+msgstr "无"
+
+msgid "UI_RENDER_SCALE"
+msgstr "渲染缩放"
+
+msgid "UI_FRAME_RATE_LIMIT"
+msgstr "帧率限制"
+
+msgid "UI_MAX_FRAME_RATE"
+msgstr "最大帧率"
+
+msgid "UI_VSYNC"
+msgstr "垂直同步"
+
+msgid "UI_GAMMA_CORRECTION"
+msgstr "伽马校正"
+
+msgid "UI_CONTRAST"
+msgstr "对比度"
+
+msgid "UI_BRIGHTNESS"
+msgstr "亮度"
+
+msgid "UI_REDUCE_SCREEN_SHAKE"
+msgstr "减少屏幕抖动"
+
+msgid "UI_SCALE_PRESET"
+msgstr "UI缩放"
+
+msgid "UI_WINDOW_MODE"
+msgstr "窗口模式"
+
+msgid "UI_INPUTMAP"
+msgstr "按键映射"
+
+msgid "UI_INPUT_ACTION"
+msgstr "动作"
+
+msgid "UI_INPUT_KEYBOARD"
+msgstr "键盘"
+
+msgid "UI_INPUT_CONTROLLER"
+msgstr "控制器"
+
+msgid "UI_INPUT_MOUSE"
+msgstr "鼠标"
+
+msgid "UI_INPUT_PRESS_KEY"
+msgstr "按任意键..."
+
+msgid "INPUT_PAUSE_NAME"
+msgstr "暂停"
+
+msgid "INPUT_TOGGLE_CONSOLE_NAME"
+msgstr "切换控制台"
+
+msgid "INPUT_MUSIC_CHANGE_NAME"
+msgstr "切换音乐"
+
+msgid "UI_FSR_ULTRA_QUALITY"
+msgstr "FSR 超高品质"
+
+msgid "UI_FSR_QUALITY"
+msgstr "FSR 品质"
+
+msgid "UI_FSR_PERFORMANCE"
+msgstr "FSR 性能"
+
+msgid "UI_FSR_ULTRA_PERFORMANCE"
+msgstr "FSR 超高性能"
+
+msgid "UI_SCALE_100_PERCENT"
+msgstr "100%"
+
+msgid "UI_SCALE_125_PERCENT"
+msgstr "125%"
+
+msgid "UI_SCALE_150_PERCENT"
+msgstr "150%"
+
+msgid "UI_SCALE_175_PERCENT"
+msgstr "175%"
+
+msgid "UI_SCALE_200_PERCENT"
+msgstr "200%"
+
+msgid "ui.main_menu.new_game_tooltip"
+msgstr "从头开始新游戏。"
+
+msgid "ui.main_menu.options_tooltip"
+msgstr "调整游戏设置，例如视频、音频和控制。"
+
+msgid "ui.main_menu.exit_tooltip"
+msgstr "退出游戏。"
+
+msgid "ui.pause_menu.resume_game_tooltip"
+msgstr "恢复当前游戏。"
+
+msgid "ui.pause_menu.options_tooltip"
+msgstr "调整游戏设置，例如视频、音频和控制。"
+
+msgid "ui.pause_menu.exit_tooltip"
+msgstr "退出游戏。"

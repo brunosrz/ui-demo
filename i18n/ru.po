@@ -1,0 +1,778 @@
+# Russian translations
+# Copyright (C) 2025 brunosrz
+# This file is distributed under the same license as the BodyLess project.
+# FIRST AUTHOR <bruno.soarxz@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BodyLess\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-13 15:00-0300\n"
+"PO-Revision-Date: 2025-08-24 10:00-0300\n"
+"Last-Translator: FULL NAME <bruno.soarxz@gmail.com>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gemini\n"
+
+msgid "UI_MAIN_MENU_TITLE"
+msgstr "Шаблон Бруно"
+
+msgid "UI_NEW_GAME"
+msgstr "Новая игра"
+
+msgid "UI_OPTIONS"
+msgstr "Настройки"
+
+msgid "UI_EXIT"
+msgstr "Выход"
+
+msgid "UI_PAUSE_MENU_TITLE"
+msgstr "Пауза"
+
+msgid "UI_RESUME_GAME"
+msgstr "Продолжить игру"
+
+msgid "UI_QUIT_CONFIRMATION_PROMPT"
+msgstr "Вы действительно хотите выйти?"
+
+msgid "UI_YES"
+msgstr "Да"
+
+msgid "UI_NO"
+msgstr "Нет"
+
+msgid "UI_SETTINGS_TITLE"
+msgstr "Настройки"
+
+msgid "UI_VIDEO"
+msgstr "Видео"
+
+msgid "UI_AUDIO"
+msgstr "Аудио"
+
+msgid "UI_BACK"
+msgstr "Назад"
+
+msgid "UI_VIDEO_OPTIONS"
+msgstr "Настройки видео"
+
+msgid "UI_FULLSCREEN"
+msgstr "Полноэкранный режим"
+
+msgid "UI_AUDIO_OPTIONS"
+msgstr "Настройки аудио"
+
+msgid "UI_MASTER_VOLUME"
+msgstr "Общая громкость"
+
+msgid "UI_MUSIC_VOLUME"
+msgstr "Музыка"
+
+msgid "UI_SFX_VOLUME"
+msgstr "Звуковые эффекты"
+
+msgid "UI_APPLY"
+msgstr "Применить"
+
+msgid "UI_LANGUAGE"
+msgstr "Язык"
+
+msgid "UI_LANGUAGE_OPTIONS"
+msgstr "Настройки языка"
+
+msgid "DEBUG_CONSOLE_READY"
+msgstr "Консоль отладки готова. Нажмите 'P' для переключения."
+
+msgid "DEBUG_LOG_TITLE"
+msgstr "Журнал глобальных событий"
+
+msgid "DEBUG_GAME_SECTION"
+msgstr "[b]Игра[/b]"
+
+msgid "DEBUG_GAME_VERSION"
+msgstr "  Версия игры: "
+
+msgid "DEBUG_GAME_STATE"
+msgstr "  Состояние: {state}"
+
+msgid "DEBUG_CURRENT_SCENE"
+msgstr "  Текущая сцена: {scene}"
+
+msgid "DEBUG_LAST_SAVE"
+msgstr "  Последнее сохранение: Н/Д"
+
+msgid "DEBUG_SYSTEM_SECTION"
+msgstr "[b]Система[/b]"
+
+msgid "DEBUG_OS"
+msgstr "  ОС: {os}"
+
+msgid "DEBUG_DISPLAY_SECTION"
+msgstr "[b]Дисплей[/b]"
+
+msgid "DEBUG_MONITOR"
+msgstr "  Монитор: {monitor}"
+
+msgid "DEBUG_MONITOR_INFO"
+msgstr "Монитор {id}: {size} @ {hz}Гц"
+
+msgid "DEBUG_SIGNAL_RECEIVED"
+msgstr "Получен сигнал '{signal}'"
+
+msgid "DEBUG_WITH_ARGS"
+msgstr " с аргументами: {{args}}"
+
+msgid "UI_MONITOR"
+msgstr "Монитор"
+
+msgid "UI_WINDOW_MODE_WINDOWED"
+msgstr "В окне"
+
+msgid "UI_WINDOW_MODE_FULLSCREEN"
+msgstr "Полноэкранный режим"
+
+msgid "UI_WINDOW_MODE_BORDERLESS"
+msgstr "Окно без рамки"
+
+msgid "UI_RESOLUTION"
+msgstr "Разрешение"
+
+msgid "DEBUG_PROCESSOR"
+msgstr "  Процессор: {processor}"
+
+msgid "DEBUG_CORES"
+msgstr "  Ядра: {cores}"
+
+msgid "DEBUG_RAM"
+msgstr "  ОЗУ: {ram}"
+
+msgid "DEBUG_VIDEO_ADAPTER"
+msgstr "  Видеоадаптер: {adapter}"
+
+msgid "DEBUG_VIDEO_DRIVER"
+msgstr "  Видеодрайвер: {driver}"
+
+msgid "DEBUG_VIDEO_RENDERER"
+msgstr "  Видеорендерер: {renderer}"
+
+msgid "UI_DRS_OFF"
+msgstr "Выкл."
+
+msgid "UI_DRS_CUSTOM"
+msgstr "Пользовательский"
+
+msgid "UI_FPS_CUSTOM"
+msgstr "Пользовательский"
+
+msgid "UI_VSYNC_OFF"
+msgstr "Выкл."
+
+msgid "UI_VSYNC_ON"
+msgstr "Вкл."
+
+msgid "UI_VSYNC_ADAPTIVE"
+msgstr "Адаптивный"
+
+msgid "UI_QUALITY_LOW"
+msgstr "Низкое"
+
+msgid "UI_QUALITY_MEDIUM"
+msgstr "Среднее"
+
+msgid "UI_QUALITY_HIGH"
+msgstr "Высокое"
+
+msgid "UI_COLORBLIND_OFF"
+msgstr "Выкл."
+
+msgid "UI_COLORBLIND_PROTANOPIA"
+msgstr "Протанопия"
+
+msgid "UI_COLORBLIND_DEUTERANOPIA"
+msgstr "Дейтеранопия"
+
+msgid "UI_COLORBLIND_TRITANOPIA"
+msgstr "Тританопия"
+
+msgid "UI_LANGUAGE_EN_US"
+msgstr "Английский (США)"
+
+msgid "UI_LANGUAGE_EN_GB"
+msgstr "Английский (Великобритания)"
+
+msgid "UI_LANGUAGE_PT_BR"
+msgstr "Португальский (Бразилия)"
+
+msgid "UI_LANGUAGE_PT_PT"
+msgstr "Португальский (Португалия)"
+
+msgid "UI_LANGUAGE_ES_ES"
+msgstr "Испанский (Испания)"
+
+msgid "UI_LANGUAGE_ES_LA"
+msgstr "Испанский (Америка)"
+
+msgid "UI_LANGUAGE_FR"
+msgstr "Французский"
+
+msgid "UI_LANGUAGE_DE"
+msgstr "Немецкий"
+
+msgid "UI_LANGUAGE_IT"
+msgstr "Итальянский"
+
+msgid "UI_LANGUAGE_NL"
+msgstr "Голландский"
+
+msgid "UI_LANGUAGE_JA"
+msgstr "Японский"
+
+msgid "UI_LANGUAGE_KO"
+msgstr "Корейский"
+
+msgid "UI_LANGUAGE_RU"
+msgstr "Русский"
+
+msgid "UI_LANGUAGE_ZH"
+msgstr "Китайский"
+
+msgid "UI_LANGUAGE_EN_IN"
+msgstr "Английский (Индия)"
+
+msgid "UI_LANGUAGE_ZH_HANS"
+msgstr "Китайский (упрощенный)"
+
+msgid "UI_LANGUAGE_ZH_HANT"
+msgstr "Китайский (традиционный)"
+
+msgid "UI_LANGUAGE_SW"
+msgstr "Суахили"
+
+msgid "UI_LANGUAGE_AF"
+msgstr "Африкаанс"
+
+msgid "UI_LANGUAGE_PL"
+msgstr "Польский"
+
+msgid "UI_LANGUAGE_TR"
+msgstr "Турецкий"
+
+msgid "UI_LANGUAGE_HI"
+msgstr "Хинди"
+
+msgid "UI_LANGUAGE_ID"
+msgstr "Индонезийский"
+
+msgid "UI_LANGUAGE_VI"
+msgstr "Вьетнамский"
+
+msgid "UI_LANGUAGE_AR"
+msgstr "Арабский"
+
+msgid "UI_LANGUAGE_FIL"
+msgstr "Филиппинский"
+
+msgid "UI_LANGUAGE_HA"
+msgstr "Хауса"
+
+msgid "UI_LANGUAGE_AM"
+msgstr "Амхарский"
+
+msgid "UI_LANGUAGE_YO"
+msgstr "Йоруба"
+
+msgid "UI_LANGUAGE_BN"
+msgstr "Бенгальский"
+
+msgid "TOOLTIP_GAMMA_CORRECTION_TITLE"
+msgstr "Гамма-коррекция"
+
+msgid "TOOLTIP_GAMMA_CORRECTION_DESC"
+msgstr "Регулирует общую яркость и контрастность графики игры."
+
+msgid "TOOLTIP_MASTER_VOLUME_TITLE"
+msgstr "Общая громкость"
+
+msgid "TOOLTIP_MASTER_VOLUME_DESC"
+msgstr "Контролирует общую громкость игры."
+
+msgid "TOOLTIP_MUSIC_VOLUME_TITLE"
+msgstr "Громкость музыки"
+
+msgid "TOOLTIP_MUSIC_VOLUME_DESC"
+msgstr "Контролирует громкость внутриигровой музыки."
+
+msgid "TOOLTIP_SFX_VOLUME_TITLE"
+msgstr "Громкость звуковых эффектов"
+
+msgid "TOOLTIP_SFX_VOLUME_DESC"
+msgstr "Контролирует громкость звуковых эффектов."
+
+msgid "TOOLTIP_MONITOR_TITLE"
+msgstr "Выбор монитора"
+
+msgid "TOOLTIP_MONITOR_DESC"
+msgstr "Выбирает монитор, на котором будет запущена игра."
+
+msgid "TOOLTIP_WINDOW_MODE_TITLE"
+msgstr "Режим окна"
+
+msgid "TOOLTIP_WINDOW_MODE_DESC"
+msgstr "Изменяет способ отображения окна игры (в окне, полноэкранный, без рамки)."
+
+msgid "TOOLTIP_RESOLUTION_TITLE"
+msgstr "Разрешение"
+
+msgid "TOOLTIP_RESOLUTION_DESC"
+msgstr "Устанавливает разрешение экрана игры."
+
+msgid "TOOLTIP_ASPECT_RATIO_TITLE"
+msgstr "Соотношение сторон"
+
+msgid "TOOLTIP_ASPECT_RATIO_DESC"
+msgstr "Регулирует соотношение сторон экрана (например, 16:9, 4:3)."
+
+msgid "TOOLTIP_DYNAMIC_RENDER_SCALE_TITLE"
+msgstr "Динамическое масштабирование рендеринга"
+
+msgid "TOOLTIP_DYNAMIC_RENDER_SCALE_DESC"
+msgstr "Динамически регулирует разрешение рендеринга для повышения производительности."
+
+msgid "TOOLTIP_RENDER_SCALE_TITLE"
+msgstr "Масштаб рендеринга"
+
+msgid "TOOLTIP_RENDER_SCALE_DESC"
+msgstr "Вручную регулирует внутреннее разрешение рендеринга."
+
+msgid "TOOLTIP_FRAME_RATE_LIMIT_TITLE"
+msgstr "Ограничение частоты кадров"
+
+msgid "TOOLTIP_FRAME_RATE_LIMIT_DESC"
+msgstr "Устанавливает максимальное количество кадров в секунду, которое будет рендерить игра."
+
+msgid "TOOLTIP_MAX_FRAME_RATE_TITLE"
+msgstr "Максимальная частота кадров"
+
+msgid "TOOLTIP_MAX_FRAME_RATE_DESC"
+msgstr "Устанавливает конкретную максимальную частоту кадров, когда включено пользовательское ограничение."
+
+msgid "TOOLTIP_VSYNC_MODE_TITLE"
+msgstr "Режим VSync"
+
+msgid "TOOLTIP_VSYNC_MODE_DESC"
+msgstr "Синхронизирует кадры с частотой обновления вашего монитора, чтобы предотвратить 'разрывы экрана'."
+
+msgid "TOOLTIP_CONTRAST_TITLE"
+msgstr "Контраст"
+
+msgid "TOOLTIP_CONTRAST_DESC"
+msgstr "Регулирует разницу между светлыми и темными областями."
+
+msgid "TOOLTIP_BRIGHTNESS_TITLE"
+msgstr "Яркость"
+
+msgid "TOOLTIP_BRIGHTNESS_DESC"
+msgstr "Регулирует общую яркость игры."
+
+msgid "TOOLTIP_SHADERS_QUALITY_TITLE"
+msgstr "Качество шейдеров"
+
+msgid "TOOLTIP_SHADERS_QUALITY_DESC"
+msgstr "Определяет визуальное качество шейдеров."
+
+msgid "TOOLTIP_EFFECTS_QUALITY_TITLE"
+msgstr "Качество эффектов"
+
+msgid "TOOLTIP_EFFECTS_QUALITY_DESC"
+msgstr "Определяет визуальное качество спецэффектов."
+
+msgid "TOOLTIP_COLORBLIND_MODE_TITLE"
+msgstr "Режим для дальтоников"
+
+msgid "TOOLTIP_COLORBLIND_MODE_DESC"
+msgstr "Применяет цветовой фильтр для дальтоников (протанопия, дейтеранопия, тританопия)."
+
+msgid "TOOLTIP_REDUCE_SCREEN_SHAKE_TITLE"
+msgstr "Уменьшить дрожание экрана"
+
+msgid "TOOLTIP_REDUCE_SCREEN_SHAKE_DESC"
+msgstr "Уменьшает интенсивность эффектов дрожания экрана."
+
+msgid "TOOLTIP_UI_SCALE_TITLE"
+msgstr "Масштаб интерфейса"
+
+msgid "TOOLTIP_UI_SCALE_DESC"
+msgstr "Регулирует размер элементов пользовательского интерфейса."
+
+msgid "ITEM_HEALING_POTION_NAME"
+msgstr "Зелье исцеления"
+
+msgid "ITEM_HEALING_POTION_DESC"
+msgstr "Восстанавливает часть вашего здоровья."
+
+msgid "ITEM_DAMAGE_BOOST_NAME"
+msgstr "Зелье усиления урона"
+
+msgid "ITEM_DAMAGE_BOOST_DESC"
+msgstr "Временно увеличивает ваш урон от атаки."
+
+msgid "ITEM_GENERIC_NAME"
+msgstr "Обычный предмет"
+
+msgid "ITEM_GENERIC_DESC"
+msgstr "Предмет-заполнитель."
+
+msgid "WEAPON_PUNCH_NAME"
+msgstr "Удар"
+
+msgid "WEAPON_PUNCH_DESC"
+msgstr "Ваша базовая рукопашная атака."
+
+msgid "WEAPON_SWORD_NAME"
+msgstr "Меч"
+
+msgid "WEAPON_SWORD_DESC"
+msgstr "Острое лезвие для ближнего боя."
+
+msgid "WEAPON_BOW_NAME"
+msgstr "Лук"
+
+msgid "WEAPON_BOW_DESC"
+msgstr "Дальнобойное оружие для бесшумных убийств."
+
+msgid "WEAPON_PISTOL_NAME"
+msgstr "Пистолет"
+
+msgid "WEAPON_PISTOL_DESC"
+msgstr "Надежный пистолет для быстрых выстрелов."
+
+msgid "WEAPON_GRENADE_NAME"
+msgstr "Граната"
+
+msgid "WEAPON_GRENADE_DESC"
+msgstr "Взрывное устройство для нанесения урона по области."
+
+msgid "WEAPON_MACHINE_GUN_NAME"
+msgstr "Пулемет"
+
+msgid "WEAPON_MACHINE_GUN_DESC"
+msgstr "Высокая скорострельность, разрушительная на близком расстоянии."
+
+msgid "ENEMY_DUMMY_NAME"
+msgstr "Тренировочный манекен"
+
+msgid "ENEMY_DUMMY_DESC"
+msgstr "Стационарная цель для тренировок."
+
+msgid "ENEMY_PATROL_BOT_NAME"
+msgstr "Патрульный робот"
+
+msgid "ENEMY_PATROL_BOT_DESC"
+msgstr "Робот, патрулирующий фиксированный путь."
+
+msgid "ENEMY_HUNTER_NAME"
+msgstr "Охотник"
+
+msgid "ENEMY_HUNTER_DESC"
+msgstr "Ловкий враг, активно преследующий игрока."
+
+msgid "UI_INVENTORY_TITLE"
+msgstr "Инвентарь"
+
+msgid "UI_INVENTORY_USE_BUTTON"
+msgstr "Использовать"
+
+msgid "UI_INVENTORY_DROP_BUTTON"
+msgstr "Выбросить"
+
+msgid "UI_INVENTORY_EMPTY_SLOT"
+msgstr "Пустой слот"
+
+msgid "UI_HEALTH"
+msgstr "Здоровье"
+
+msgid "UI_AMMO"
+msgstr "Боеприпасы"
+
+msgid "UI_RELOAD_PROMPT"
+msgstr "Нажмите R для перезарядки"
+
+msgid "TOAST_SETTINGS_SAVED_TITLE"
+msgstr "Настройки сохранены"
+
+msgid "TOAST_SETTINGS_SAVED_MESSAGE"
+msgstr "Ваши игровые настройки были сохранены."
+
+msgid "TOAST_ITEM_COLLECTED_TITLE"
+msgstr "Предмет собран"
+
+msgid "TOAST_ITEM_COLLECTED_MESSAGE"
+msgstr "Вы подобрали предмет!"
+
+msgid "TOAST_ERROR_SAVE_FAILED_TITLE"
+msgstr "Ошибка сохранения"
+
+msgid "TOAST_ERROR_SAVE_FAILED_MESSAGE"
+msgstr "Не удалось сохранить прогресс игры."
+
+msgid "POPOVER_CONFIRM_USE_ITEM_TITLE"
+msgstr "Подтвердить использование"
+
+msgid "POPOVER_CONFIRM_USE_ITEM_MESSAGE"
+msgstr "Вы уверены, что хотите использовать этот предмет?"
+
+msgid "POPOVER_YES"
+msgstr "Да"
+
+msgid "POPOVER_NO"
+msgstr "Нет"
+
+msgid "COACH_MARK_WELCOME_TITLE"
+msgstr "Добро пожаловать!"
+
+msgid "COACH_MARK_WELCOME_MESSAGE"
+msgstr "Добро пожаловать в игру! Давайте изучим основы."
+
+msgid "COACH_MARK_MOVEMENT_TITLE"
+msgstr "Движение"
+
+msgid "COACH_MARK_MOVEMENT_MESSAGE"
+msgstr "Используйте WASD или левый аналоговый стик для перемещения."
+
+msgid "COACH_MARK_PAUSE_TITLE"
+msgstr "Приостановить игру"
+
+msgid "COACH_MARK_PAUSE_MESSAGE"
+msgstr "Нажмите ESC или Start, чтобы приостановить игру и получить доступ к меню."
+
+msgid "COACH_MARK_INVENTORY_TITLE"
+msgstr "Инвентарь"
+
+msgid "COACH_MARK_INVENTORY_MESSAGE"
+msgstr "Нажмите E или Select, чтобы открыть свой инвентарь."
+
+msgid "COACH_MARK_SKIP_BUTTON"
+msgstr "Пропустить обучение"
+
+msgid "COACH_MARK_NEXT_BUTTON"
+msgstr "Далее"
+
+msgid "INPUT_INVENTORY_NAME"
+msgstr "Инвентарь"
+
+msgid "INPUT_RELOAD_NAME"
+msgstr "Перезарядка"
+
+msgid "INPUT_SPECIAL_NAME"
+msgstr "Особая способность"
+
+msgid "INPUT_SPRINT_NAME"
+msgstr "Бег"
+
+msgid "INPUT_CROUCH_NAME"
+msgstr "Присесть"
+
+msgid "INPUT_MOVE_LEFT_NAME"
+msgstr "Движение влево"
+
+msgid "INPUT_MOVE_RIGHT_NAME"
+msgstr "Движение вправо"
+
+msgid "INPUT_MOVE_UP_NAME"
+msgstr "Движение вверх"
+
+msgid "INPUT_MOVE_DOWN_NAME"
+msgstr "Движение вниз"
+
+msgid "INPUT_JUMP_NAME"
+msgstr "Прыжок"
+
+msgid "INPUT_ATTACK_NAME"
+msgstr "Атака"
+
+msgid "TOAST_LOAD_SUCCESS_MESSAGE"
+msgstr "Игра успешно загружена!"
+
+msgid "TOAST_ERROR_LOAD_FAILED_MESSAGE"
+msgstr "Не удалось загрузить прогресс игры."
+
+msgid "TOAST_ITEM_USED_MESSAGE"
+msgstr "Предмет использован: {item_name}!"
+
+msgid "TOAST_ITEM_EQUIPPED_MESSAGE"
+msgstr "Предмет экипирован: {item_name}!"
+
+msgid "UI_ASPECT_RATIO"
+msgstr "Соотношение сторон"
+
+msgid "UI_UPSCALE_MODE"
+msgstr "Режим масштабирования"
+
+msgid "UI_UPSCALING_QUALITY"
+msgstr "Качество масштабирования"
+
+msgid "UI_UPSCALING_NONE"
+msgstr "Нет"
+
+msgid "UI_FSR_BALANCED"
+msgstr "FSR Сбалансированный"
+
+msgid "UI_UPSCALE_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_UPSCALE_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_CHANGE_GAME"
+msgstr "Сменить игру"
+
+msgid "UI_ASPECT_FREE"
+msgstr "Свободный"
+
+msgid "UI_ASPECT_KEEP"
+msgstr "Сохранить соотношение сторон"
+
+msgid "UI_ASPECT_KEEP_WIDTH"
+msgstr "Сохранить ширину"
+
+msgid "UI_ASPECT_KEEP_HEIGHT"
+msgstr "Сохранить высоту"
+
+msgid "UI_ASPECT_EXPAND"
+msgstr "Расширить"
+
+msgid "UI_DYNAMIC_RENDER_NONE"
+msgstr "Нет"
+
+msgid "UI_DYNAMIC_RENDER_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_DYNAMIC_RENDER_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_FRAME_RATE_NO_LIMIT"
+msgstr "Без ограничений"
+
+msgid "UI_FRAME_RATE_VSYNC"
+msgstr "VSync"
+
+msgid "UI_FRAME_RATE_ADAPTIVE_VSYNC"
+msgstr "Адаптивный VSync"
+
+msgid "UI_FRAME_RATE_CUSTOM"
+msgstr "Пользовательский"
+
+msgid "UI_VSYNC_ENABLED"
+msgstr "Включено"
+
+msgid "UI_VSYNC_DISABLED"
+msgstr "Отключено"
+
+msgid "UI_COLORBLIND_NONE"
+msgstr "Нет"
+
+msgid "UI_RENDER_SCALE"
+msgstr "Масштаб рендеринга"
+
+msgid "UI_FRAME_RATE_LIMIT"
+msgstr "Лимит FPS"
+
+msgid "UI_MAX_FRAME_RATE"
+msgstr "Макс. FPS"
+
+msgid "UI_VSYNC"
+msgstr "VSync"
+
+msgid "UI_GAMMA_CORRECTION"
+msgstr "Гамма-коррекция"
+
+msgid "UI_CONTRAST"
+msgstr "Контраст"
+
+msgid "UI_BRIGHTNESS"
+msgstr "Яркость"
+
+msgid "UI_REDUCE_SCREEN_SHAKE"
+msgstr "Уменьшить дрожание экрана"
+
+msgid "UI_SCALE_PRESET"
+msgstr "Масштаб интерфейса"
+
+msgid "UI_WINDOW_MODE"
+msgstr "Режим окна"
+
+msgid "UI_INPUTMAP"
+msgstr "Назначение клавиш"
+
+msgid "UI_INPUT_ACTION"
+msgstr "Действие"
+
+msgid "UI_INPUT_KEYBOARD"
+msgstr "Клавиатура"
+
+msgid "UI_INPUT_CONTROLLER"
+msgstr "Контроллер"
+
+msgid "UI_INPUT_MOUSE"
+msgstr "Мышь"
+
+msgid "UI_INPUT_PRESS_KEY"
+msgstr "Нажмите клавишу..."
+
+msgid "INPUT_PAUSE_NAME"
+msgstr "Пауза"
+
+msgid "INPUT_TOGGLE_CONSOLE_NAME"
+msgstr "Переключить консоль"
+
+msgid "INPUT_MUSIC_CHANGE_NAME"
+msgstr "Сменить музыку"
+
+msgid "UI_FSR_ULTRA_QUALITY"
+msgstr "FSR Ультра качество"
+
+msgid "UI_FSR_QUALITY"
+msgstr "FSR Качество"
+
+msgid "UI_FSR_PERFORMANCE"
+msgstr "FSR Производительность"
+
+msgid "UI_FSR_ULTRA_PERFORMANCE"
+msgstr "FSR Ультра производительность"
+
+msgid "UI_SCALE_100_PERCENT"
+msgstr "100%"
+
+msgid "UI_SCALE_125_PERCENT"
+msgstr "125%"
+
+msgid "UI_SCALE_150_PERCENT"
+msgstr "150%"
+
+msgid "UI_SCALE_175_PERCENT"
+msgstr "175%"
+
+msgid "UI_SCALE_200_PERCENT"
+msgstr "200%"
+
+msgid "ui.main_menu.new_game_tooltip"
+msgstr "Начать новую игру с самого начала."
+
+msgid "ui.main_menu.options_tooltip"
+msgstr "Настроить параметры игры, такие как видео, аудио и управление."
+
+msgid "ui.main_menu.exit_tooltip"
+msgstr "Выйти из игры."
+
+msgid "ui.pause_menu.resume_game_tooltip"
+msgstr "Продолжить текущую игру."
+
+msgid "ui.pause_menu.options_tooltip"
+msgstr "Настроить параметры игры, такие как видео, аудио и управление."
+
+msgid "ui.pause_menu.exit_tooltip"
+msgstr "Выйти из игры."

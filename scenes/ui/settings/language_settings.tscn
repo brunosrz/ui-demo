@@ -1,0 +1,375 @@
+[gd_scene load_steps=5 format=3 uid="uid://bey3t3k4biaww"]
+
+[ext_resource type="Script" uid="uid://cnmrmds3xslo2" path="res://scripts/ui/settings/locate/language_options.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://bml1tlmc1m8p" path="res://assets/fonts/sourcesans.otf" id="2"]
+[ext_resource type="StyleBox" uid="uid://ccucsa8kk57ft" path="res://resources/button_focus.tres" id="3"]
+[ext_resource type="StyleBox" uid="uid://bej76kq62gywe" path="res://resources/button_normal.tres" id="4"]
+
+[node name="LanguageSettings" type="VBoxContainer"]
+custom_minimum_size = Vector2(560, 0)
+theme_override_constants/separation = 10
+
+[node name="LanguageOptionsContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 10
+script = ExtResource("1")
+
+[node name="EN_US_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_EN_US"
+metadata/locale = "en_us"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/EN_US_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="EN_GB_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_EN_GB"
+metadata/locale = "en_gb"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/EN_GB_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="EN_IN_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_EN_IN"
+metadata/locale = "en_in"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/EN_IN_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="PT_BR_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_PT_BR"
+metadata/locale = "pt_br"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/PT_BR_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="PT_PT_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_PT_PT"
+metadata/locale = "pt_pt"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/PT_PT_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="ES_ES_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_ES_ES"
+metadata/locale = "es_es"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/ES_ES_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="ES_LA_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_ES_LA"
+metadata/locale = "es_la"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/ES_LA_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="FR_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_FR"
+metadata/locale = "fr"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/FR_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="DE_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_DE"
+metadata/locale = "de"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/DE_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="IT_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_IT"
+metadata/locale = "it"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/IT_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="JA_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_JA"
+metadata/locale = "ja"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/JA_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="KO_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_KO"
+metadata/locale = "ko"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/KO_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="RU_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_RU"
+metadata/locale = "ru"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/RU_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="ZH_HANS_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_ZH_HANS"
+metadata/locale = "zh_hans"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/ZH_HANS_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true
+
+[node name="ZH_HANT_Button" type="Button" parent="LanguageOptionsContainer"]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_styles/focus = ExtResource("3")
+theme_override_styles/hover_pressed = ExtResource("3")
+theme_override_styles/hover = ExtResource("3")
+theme_override_styles/pressed = ExtResource("3")
+theme_override_styles/normal = ExtResource("4")
+text = "UI_LANGUAGE_ZH_HANT"
+metadata/locale = "zh_hant"
+
+[node name="ColorRect" type="ColorRect" parent="LanguageOptionsContainer/ZH_HANT_Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.392157, 0.392157, 0.392157, 0)
+metadata/_edit_lock_ = true

@@ -1,0 +1,778 @@
+# Japanese translations
+# Copyright (C) 2025 brunosrz
+# This file is distributed under the same license as the BodyLess project.
+# FIRST AUTHOR <bruno.soarxz@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BodyLess\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-13 15:00-0300\n"
+"PO-Revision-Date: 2025-08-24 10:00-0300\n"
+"Last-Translator: FULL NAME <bruno.soarxz@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gemini\n"
+
+msgid "UI_MAIN_MENU_TITLE"
+msgstr "ブルーノのテンプレート"
+
+msgid "UI_NEW_GAME"
+msgstr "新しいゲーム"
+
+msgid "UI_OPTIONS"
+msgstr "オプション"
+
+msgid "UI_EXIT"
+msgstr "終了"
+
+msgid "UI_PAUSE_MENU_TITLE"
+msgstr "一時停止中"
+
+msgid "UI_RESUME_GAME"
+msgstr "ゲームを再開"
+
+msgid "UI_QUIT_CONFIRMATION_PROMPT"
+msgstr "本当に終了しますか？"
+
+msgid "UI_YES"
+msgstr "はい"
+
+msgid "UI_NO"
+msgstr "いいえ"
+
+msgid "UI_SETTINGS_TITLE"
+msgstr "設定"
+
+msgid "UI_VIDEO"
+msgstr "ビデオ"
+
+msgid "UI_AUDIO"
+msgstr "オーディオ"
+
+msgid "UI_BACK"
+msgstr "戻る"
+
+msgid "UI_VIDEO_OPTIONS"
+msgstr "ビデオオプション"
+
+msgid "UI_FULLSCREEN"
+msgstr "フルスクリーン"
+
+msgid "UI_AUDIO_OPTIONS"
+msgstr "オーディオオプション"
+
+msgid "UI_MASTER_VOLUME"
+msgstr "マスター"
+
+msgid "UI_MUSIC_VOLUME"
+msgstr "音楽"
+
+msgid "UI_SFX_VOLUME"
+msgstr "効果音"
+
+msgid "UI_APPLY"
+msgstr "適用"
+
+msgid "UI_LANGUAGE"
+msgstr "言語"
+
+msgid "UI_LANGUAGE_OPTIONS"
+msgstr "言語"
+
+msgid "DEBUG_CONSOLE_READY"
+msgstr "デバッグコンソール準備完了。'P'を押して切り替えます。"
+
+msgid "DEBUG_LOG_TITLE"
+msgstr "グローバルイベントログ"
+
+msgid "DEBUG_GAME_SECTION"
+msgstr "[b]ゲーム[/b]"
+
+msgid "DEBUG_GAME_VERSION"
+msgstr "  ゲームバージョン: "
+
+msgid "DEBUG_GAME_STATE"
+msgstr "  状態: {state}"
+
+msgid "DEBUG_CURRENT_SCENE"
+msgstr "  現在のシーン: {scene}"
+
+msgid "DEBUG_LAST_SAVE"
+msgstr "  最終セーブ: N/A"
+
+msgid "DEBUG_SYSTEM_SECTION"
+msgstr "[b]システム[/b]"
+
+msgid "DEBUG_OS"
+msgstr "  OS: {os}"
+
+msgid "DEBUG_DISPLAY_SECTION"
+msgstr "[b]ディスプレイ[/b]"
+
+msgid "DEBUG_MONITOR"
+msgstr "  モニター: {monitor}"
+
+msgid "DEBUG_MONITOR_INFO"
+msgstr "モニター {id}: {size} @ {hz}Hz"
+
+msgid "DEBUG_SIGNAL_RECEIVED"
+msgstr "シグナル '{signal}' を受信しました"
+
+msgid "DEBUG_WITH_ARGS"
+msgstr " 引数付き: {{args}}"
+
+msgid "UI_MONITOR"
+msgstr "モニター"
+
+msgid "UI_WINDOW_MODE_WINDOWED"
+msgstr "ウィンドウ"
+
+msgid "UI_WINDOW_MODE_FULLSCREEN"
+msgstr "フルスクリーン"
+
+msgid "UI_WINDOW_MODE_BORDERLESS"
+msgstr "ボーダーレスウィンドウ"
+
+msgid "UI_RESOLUTION"
+msgstr "解像度"
+
+msgid "DEBUG_PROCESSOR"
+msgstr "  プロセッサー: {processor}"
+
+msgid "DEBUG_CORES"
+msgstr "  コア: {cores}"
+
+msgid "DEBUG_RAM"
+msgstr "  RAM: {ram}"
+
+msgid "DEBUG_VIDEO_ADAPTER"
+msgstr "  ビデオアダプター: {adapter}"
+
+msgid "DEBUG_VIDEO_DRIVER"
+msgstr "  ビデオドライバー: {driver}"
+
+msgid "DEBUG_VIDEO_RENDERER"
+msgstr "  ビデオレンダラー: {renderer}"
+
+msgid "UI_DRS_OFF"
+msgstr "オフ"
+
+msgid "UI_DRS_CUSTOM"
+msgstr "カスタム"
+
+msgid "UI_FPS_CUSTOM"
+msgstr "カスタム"
+
+msgid "UI_VSYNC_OFF"
+msgstr "オフ"
+
+msgid "UI_VSYNC_ON"
+msgstr "オン"
+
+msgid "UI_VSYNC_ADAPTIVE"
+msgstr "アダプティブ"
+
+msgid "UI_QUALITY_LOW"
+msgstr "低"
+
+msgid "UI_QUALITY_MEDIUM"
+msgstr "中"
+
+msgid "UI_QUALITY_HIGH"
+msgstr "高"
+
+msgid "UI_COLORBLIND_OFF"
+msgstr "オフ"
+
+msgid "UI_COLORBLIND_PROTANOPIA"
+msgstr "第一色覚異常"
+
+msgid "UI_COLORBLIND_DEUTERANOPIA"
+msgstr "第二色覚異常"
+
+msgid "UI_COLORBLIND_TRITANOPIA"
+msgstr "第三色覚異常"
+
+msgid "UI_LANGUAGE_EN_US"
+msgstr "英語 (米国)"
+
+msgid "UI_LANGUAGE_EN_GB"
+msgstr "英語 (英国)"
+
+msgid "UI_LANGUAGE_PT_BR"
+msgstr "ポルトガル語 (ブラジル)"
+
+msgid "UI_LANGUAGE_PT_PT"
+msgstr "ポルトガル語 (ポルトガル)"
+
+msgid "UI_LANGUAGE_ES_ES"
+msgstr "スペイン語 (スペイン)"
+
+msgid "UI_LANGUAGE_ES_LA"
+msgstr "スペイン語 (アメリカ)"
+
+msgid "UI_LANGUAGE_FR"
+msgstr "フランス語"
+
+msgid "UI_LANGUAGE_DE"
+msgstr "ドイツ語"
+
+msgid "UI_LANGUAGE_IT"
+msgstr "イタリア語"
+
+msgid "UI_LANGUAGE_NL"
+msgstr "オランダ語"
+
+msgid "UI_LANGUAGE_JA"
+msgstr "日本語"
+
+msgid "UI_LANGUAGE_KO"
+msgstr "韓国語"
+
+msgid "UI_LANGUAGE_RU"
+msgstr "ロシア語"
+
+msgid "UI_LANGUAGE_ZH"
+msgstr "中国語"
+
+msgid "UI_LANGUAGE_EN_IN"
+msgstr "英語 (インド)"
+
+msgid "UI_LANGUAGE_ZH_HANS"
+msgstr "中国語 (簡体字)"
+
+msgid "UI_LANGUAGE_ZH_HANT"
+msgstr "中国語 (繁体字)"
+
+msgid "UI_LANGUAGE_SW"
+msgstr "スワヒリ語"
+
+msgid "UI_LANGUAGE_AF"
+msgstr "アフリカーンス語"
+
+msgid "UI_LANGUAGE_PL"
+msgstr "ポーランド語"
+
+msgid "UI_LANGUAGE_TR"
+msgstr "トルコ語"
+
+msgid "UI_LANGUAGE_HI"
+msgstr "ヒンディー語"
+
+msgid "UI_LANGUAGE_ID"
+msgstr "インドネシア語"
+
+msgid "UI_LANGUAGE_VI"
+msgstr "ベトナム語"
+
+msgid "UI_LANGUAGE_AR"
+msgstr "アラビア語"
+
+msgid "UI_LANGUAGE_FIL"
+msgstr "フィリピン語"
+
+msgid "UI_LANGUAGE_HA"
+msgstr "ハウサ語"
+
+msgid "UI_LANGUAGE_AM"
+msgstr "アムハラ語"
+
+msgid "UI_LANGUAGE_YO"
+msgstr "ヨルバ語"
+
+msgid "UI_LANGUAGE_BN"
+msgstr "ベンガル語"
+
+msgid "TOOLTIP_GAMMA_CORRECTION_TITLE"
+msgstr "ガンマ補正"
+
+msgid "TOOLTIP_GAMMA_CORRECTION_DESC"
+msgstr "ゲームのビジュアル全体の明るさとコントラストを調整します。"
+
+msgid "TOOLTIP_MASTER_VOLUME_TITLE"
+msgstr "マスターボリューム"
+
+msgid "TOOLTIP_MASTER_VOLUME_DESC"
+msgstr "ゲーム全体の音量を制御します。"
+
+msgid "TOOLTIP_MUSIC_VOLUME_TITLE"
+msgstr "音楽ボリューム"
+
+msgid "TOOLTIP_MUSIC_VOLUME_DESC"
+msgstr "ゲーム内の音楽の音量を制御します。"
+
+msgid "TOOLTIP_SFX_VOLUME_TITLE"
+msgstr "効果音ボリューム"
+
+msgid "TOOLTIP_SFX_VOLUME_DESC"
+msgstr "効果音の音量を制御します。"
+
+msgid "TOOLTIP_MONITOR_TITLE"
+msgstr "モニター選択"
+
+msgid "TOOLTIP_MONITOR_DESC"
+msgstr "ゲームを実行するモニターを選択します。"
+
+msgid "TOOLTIP_WINDOW_MODE_TITLE"
+msgstr "ウィンドウモード"
+
+msgid "TOOLTIP_WINDOW_MODE_DESC"
+msgstr "ゲームウィンドウの表示方法を変更します（ウィンドウ、フルスクリーン、ボーダーレス）。"
+
+msgid "TOOLTIP_RESOLUTION_TITLE"
+msgstr "解像度"
+
+msgid "TOOLTIP_RESOLUTION_DESC"
+msgstr "ゲームの表示解像度を設定します。"
+
+msgid "TOOLTIP_ASPECT_RATIO_TITLE"
+msgstr "アスペクト比"
+
+msgid "TOOLTIP_ASPECT_RATIO_DESC"
+msgstr "画面のアスペクト比を調整します（例：16:9、4:3）。"
+
+msgid "TOOLTIP_DYNAMIC_RENDER_SCALE_TITLE"
+msgstr "動的レンダースケール"
+
+msgid "TOOLTIP_DYNAMIC_RENDER_SCALE_DESC"
+msgstr "パフォーマンス向上のため、レンダリング解像度を動的に調整します。"
+
+msgid "TOOLTIP_RENDER_SCALE_TITLE"
+msgstr "レンダースケール"
+
+msgid "TOOLTIP_RENDER_SCALE_DESC"
+msgstr "内部レンダリング解像度を手動で調整します。"
+
+msgid "TOOLTIP_FRAME_RATE_LIMIT_TITLE"
+msgstr "フレームレート制限"
+
+msgid "TOOLTIP_FRAME_RATE_LIMIT_DESC"
+msgstr "ゲームがレンダリングする1秒あたりの最大フレーム数を設定します。"
+
+msgid "TOOLTIP_MAX_FRAME_RATE_TITLE"
+msgstr "最大フレームレート"
+
+msgid "TOOLTIP_MAX_FRAME_RATE_DESC"
+msgstr "カスタム制限が有効な場合、特定の最大フレームレートを設定します。"
+
+msgid "TOOLTIP_VSYNC_MODE_TITLE"
+msgstr "VSyncモード"
+
+msgid "TOOLTIP_VSYNC_MODE_DESC"
+msgstr "モニターのリフレッシュレートとフレームを同期させ、'スクリーンティアリング'を防ぎます。"
+
+msgid "TOOLTIP_CONTRAST_TITLE"
+msgstr "コントラスト"
+
+msgid "TOOLTIP_CONTRAST_DESC"
+msgstr "明るい領域と暗い領域の差を調整します。"
+
+msgid "TOOLTIP_BRIGHTNESS_TITLE"
+msgstr "明るさ"
+
+msgid "TOOLTIP_BRIGHTNESS_DESC"
+msgstr "ゲーム全体の明るさを調整します。"
+
+msgid "TOOLTIP_SHADERS_QUALITY_TITLE"
+msgstr "シェーダー品質"
+
+msgid "TOOLTIP_SHADERS_QUALITY_DESC"
+msgstr "シェーダーの視覚品質を定義します。"
+
+msgid "TOOLTIP_EFFECTS_QUALITY_TITLE"
+msgstr "エフェクト品質"
+
+msgid "TOOLTIP_EFFECTS_QUALITY_DESC"
+msgstr "特殊効果の視覚品質を定義します。"
+
+msgid "TOOLTIP_COLORBLIND_MODE_TITLE"
+msgstr "色覚異常モード"
+
+msgid "TOOLTIP_COLORBLIND_MODE_DESC"
+msgstr "色覚異常（第一色覚異常、第二色覚異常、第三色覚異常）のカラーフィルターを適用します。"
+
+msgid "TOOLTIP_REDUCE_SCREEN_SHAKE_TITLE"
+msgstr "画面揺れを軽減"
+
+msgid "TOOLTIP_REDUCE_SCREEN_SHAKE_DESC"
+msgstr "画面揺れエフェクトの強度を軽減します。"
+
+msgid "TOOLTIP_UI_SCALE_TITLE"
+msgstr "UIスケール"
+
+msgid "TOOLTIP_UI_SCALE_DESC"
+msgstr "ユーザーインターフェース要素のサイズを調整します。"
+
+msgid "ITEM_HEALING_POTION_NAME"
+msgstr "回復ポーション"
+
+msgid "ITEM_HEALING_POTION_DESC"
+msgstr "体力を一部回復します。"
+
+msgid "ITEM_DAMAGE_BOOST_NAME"
+msgstr "ダメージブーストポーション"
+
+msgid "ITEM_DAMAGE_BOOST_DESC"
+msgstr "一時的に攻撃ダメージを増加させます。"
+
+msgid "ITEM_GENERIC_NAME"
+msgstr "汎用アイテム"
+
+msgid "ITEM_GENERIC_DESC"
+msgstr "プレースホルダーアイテム。"
+
+msgid "WEAPON_PUNCH_NAME"
+msgstr "パンチ"
+
+msgid "WEAPON_PUNCH_DESC"
+msgstr "あなたの基本的な近接攻撃。"
+
+msgid "WEAPON_SWORD_NAME"
+msgstr "剣"
+
+msgid "WEAPON_SWORD_DESC"
+msgstr "近接戦闘用の鋭い刃。"
+
+msgid "WEAPON_BOW_NAME"
+msgstr "弓"
+
+msgid "WEAPON_BOW_DESC"
+msgstr "静かな排除のための長距離武器。"
+
+msgid "WEAPON_PISTOL_NAME"
+msgstr "ピストル"
+
+msgid "WEAPON_PISTOL_DESC"
+msgstr "素早い射撃のための信頼できるハンドガン。"
+
+msgid "WEAPON_GRENADE_NAME"
+msgstr "手榴弾"
+
+msgid "WEAPON_GRENADE_DESC"
+msgstr "範囲ダメージを与える爆発装置。"
+
+msgid "WEAPON_MACHINE_GUN_NAME"
+msgstr "機関銃"
+
+msgid "WEAPON_MACHINE_GUN_DESC"
+msgstr "高い連射速度、近距離で壊滅的。"
+
+msgid "ENEMY_DUMMY_NAME"
+msgstr "訓練ダミー"
+
+msgid "ENEMY_DUMMY_DESC"
+msgstr "練習用の静止ターゲット。"
+
+msgid "ENEMY_PATROL_BOT_NAME"
+msgstr "パトロールボット"
+
+msgid "ENEMY_PATROL_BOT_DESC"
+msgstr "固定経路をパトロールするロボット。"
+
+msgid "ENEMY_HUNTER_NAME"
+msgstr "ハンター"
+
+msgid "ENEMY_HUNTER_DESC"
+msgstr "プレイヤーを積極的に追跡する機敏な敵。"
+
+msgid "UI_INVENTORY_TITLE"
+msgstr "インベントリ"
+
+msgid "UI_INVENTORY_USE_BUTTON"
+msgstr "使用"
+
+msgid "UI_INVENTORY_DROP_BUTTON"
+msgstr "捨てる"
+
+msgid "UI_INVENTORY_EMPTY_SLOT"
+msgstr "空のスロット"
+
+msgid "UI_HEALTH"
+msgstr "体力"
+
+msgid "UI_AMMO"
+msgstr "弾薬"
+
+msgid "UI_RELOAD_PROMPT"
+msgstr "Rを押してリロード"
+
+msgid "TOAST_SETTINGS_SAVED_TITLE"
+msgstr "設定を保存しました"
+
+msgid "TOAST_SETTINGS_SAVED_MESSAGE"
+msgstr "ゲーム設定が保存されました。"
+
+msgid "TOAST_ITEM_COLLECTED_TITLE"
+msgstr "アイテムを収集しました"
+
+msgid "TOAST_ITEM_COLLECTED_MESSAGE"
+msgstr "アイテムを拾いました！"
+
+msgid "TOAST_ERROR_SAVE_FAILED_TITLE"
+msgstr "保存に失敗しました"
+
+msgid "TOAST_ERROR_SAVE_FAILED_MESSAGE"
+msgstr "ゲームの進行状況の保存に失敗しました。"
+
+msgid "POPOVER_CONFIRM_USE_ITEM_TITLE"
+msgstr "使用を確認"
+
+msgid "POPOVER_CONFIRM_USE_ITEM_MESSAGE"
+msgstr "このアイテムを使用してもよろしいですか？"
+
+msgid "POPOVER_YES"
+msgstr "はい"
+
+msgid "POPOVER_NO"
+msgstr "いいえ"
+
+msgid "COACH_MARK_WELCOME_TITLE"
+msgstr "ようこそ！"
+
+msgid "COACH_MARK_WELCOME_MESSAGE"
+msgstr "ゲームへようこそ！基本を学びましょう。"
+
+msgid "COACH_MARK_MOVEMENT_TITLE"
+msgstr "移動"
+
+msgid "COACH_MARK_MOVEMENT_MESSAGE"
+msgstr "WASDまたは左アナログスティックで移動します。"
+
+msgid "COACH_MARK_PAUSE_TITLE"
+msgstr "ゲームを一時停止"
+
+msgid "COACH_MARK_PAUSE_MESSAGE"
+msgstr "ESCまたはStartを押してゲームを一時停止し、メニューにアクセスします。"
+
+msgid "COACH_MARK_INVENTORY_TITLE"
+msgstr "インベントリ"
+
+msgid "COACH_MARK_INVENTORY_MESSAGE"
+msgstr "EまたはSelectを押してインベントリを開きます。"
+
+msgid "COACH_MARK_SKIP_BUTTON"
+msgstr "チュートリアルをスキップ"
+
+msgid "COACH_MARK_NEXT_BUTTON"
+msgstr "次へ"
+
+msgid "INPUT_INVENTORY_NAME"
+msgstr "インベントリ"
+
+msgid "INPUT_RELOAD_NAME"
+msgstr "リロード"
+
+msgid "INPUT_SPECIAL_NAME"
+msgstr "特殊能力"
+
+msgid "INPUT_SPRINT_NAME"
+msgstr "スプリント"
+
+msgid "INPUT_CROUCH_NAME"
+msgstr "しゃがむ"
+
+msgid "INPUT_MOVE_LEFT_NAME"
+msgstr "左に移動"
+
+msgid "INPUT_MOVE_RIGHT_NAME"
+msgstr "右に移動"
+
+msgid "INPUT_MOVE_UP_NAME"
+msgstr "上に移動"
+
+msgid "INPUT_MOVE_DOWN_NAME"
+msgstr "下に移動"
+
+msgid "INPUT_JUMP_NAME"
+msgstr "ジャンプ"
+
+msgid "INPUT_ATTACK_NAME"
+msgstr "攻撃"
+
+msgid "TOAST_LOAD_SUCCESS_MESSAGE"
+msgstr "ゲームが正常にロードされました！"
+
+msgid "TOAST_ERROR_LOAD_FAILED_MESSAGE"
+msgstr "ゲームの進行状況のロードに失敗しました。"
+
+msgid "TOAST_ITEM_USED_MESSAGE"
+msgstr "アイテムを使用しました: {item_name}！"
+
+msgid "TOAST_ITEM_EQUIPPED_MESSAGE"
+msgstr "アイテムを装備しました: {item_name}！"
+
+msgid "UI_ASPECT_RATIO"
+msgstr "アスペクト比"
+
+msgid "UI_UPSCALE_MODE"
+msgstr "アップスケールモード"
+
+msgid "UI_UPSCALING_QUALITY"
+msgstr "アップスケール品質"
+
+msgid "UI_UPSCALING_NONE"
+msgstr "なし"
+
+msgid "UI_FSR_BALANCED"
+msgstr "FSRバランス"
+
+msgid "UI_UPSCALE_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_UPSCALE_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_CHANGE_GAME"
+msgstr "ゲームを変更"
+
+msgid "UI_ASPECT_FREE"
+msgstr "自由"
+
+msgid "UI_ASPECT_KEEP"
+msgstr "アスペクト比を維持"
+
+msgid "UI_ASPECT_KEEP_WIDTH"
+msgstr "幅を維持"
+
+msgid "UI_ASPECT_KEEP_HEIGHT"
+msgstr "高さを維持"
+
+msgid "UI_ASPECT_EXPAND"
+msgstr "拡大"
+
+msgid "UI_DYNAMIC_RENDER_NONE"
+msgstr "なし"
+
+msgid "UI_DYNAMIC_RENDER_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_DYNAMIC_RENDER_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_FRAME_RATE_NO_LIMIT"
+msgstr "制限なし"
+
+msgid "UI_FRAME_RATE_VSYNC"
+msgstr "VSync"
+
+msgid "UI_FRAME_RATE_ADAPTIVE_VSYNC"
+msgstr "アダプティブVSync"
+
+msgid "UI_FRAME_RATE_CUSTOM"
+msgstr "カスタム"
+
+msgid "UI_VSYNC_ENABLED"
+msgstr "有効"
+
+msgid "UI_VSYNC_DISABLED"
+msgstr "無効"
+
+msgid "UI_COLORBLIND_NONE"
+msgstr "なし"
+
+msgid "UI_RENDER_SCALE"
+msgstr "レンダースケール"
+
+msgid "UI_FRAME_RATE_LIMIT"
+msgstr "FPS制限"
+
+msgid "UI_MAX_FRAME_RATE"
+msgstr "最大FPS"
+
+msgid "UI_VSYNC"
+msgstr "VSync"
+
+msgid "UI_GAMMA_CORRECTION"
+msgstr "ガンマ補正"
+
+msgid "UI_CONTRAST"
+msgstr "コントラスト"
+
+msgid "UI_BRIGHTNESS"
+msgstr "明るさ"
+
+msgid "UI_REDUCE_SCREEN_SHAKE"
+msgstr "画面揺れを軽減"
+
+msgid "UI_SCALE_PRESET"
+msgstr "UIスケール"
+
+msgid "UI_WINDOW_MODE"
+msgstr "ウィンドウモード"
+
+msgid "UI_INPUTMAP"
+msgstr "キーマッピング"
+
+msgid "UI_INPUT_ACTION"
+msgstr "アクション"
+
+msgid "UI_INPUT_KEYBOARD"
+msgstr "キーボード"
+
+msgid "UI_INPUT_CONTROLLER"
+msgstr "コントローラー"
+
+msgid "UI_INPUT_MOUSE"
+msgstr "マウス"
+
+msgid "UI_INPUT_PRESS_KEY"
+msgstr "キーを押してください..."
+
+msgid "INPUT_PAUSE_NAME"
+msgstr "一時停止"
+
+msgid "INPUT_TOGGLE_CONSOLE_NAME"
+msgstr "コンソール切り替え"
+
+msgid "INPUT_MUSIC_CHANGE_NAME"
+msgstr "音楽変更"
+
+msgid "UI_FSR_ULTRA_QUALITY"
+msgstr "FSR ウルトラ品質"
+
+msgid "UI_FSR_QUALITY"
+msgstr "FSR 品質"
+
+msgid "UI_FSR_PERFORMANCE"
+msgstr "FSR パフォーマンス"
+
+msgid "UI_FSR_ULTRA_PERFORMANCE"
+msgstr "FSR ウルトラパフォーマンス"
+
+msgid "UI_SCALE_100_PERCENT"
+msgstr "100%"
+
+msgid "UI_SCALE_125_PERCENT"
+msgstr "125%"
+
+msgid "UI_SCALE_150_PERCENT"
+msgstr "150%"
+
+msgid "UI_SCALE_175_PERCENT"
+msgstr "175%"
+
+msgid "UI_SCALE_200_PERCENT"
+msgstr "200%"
+
+msgid "ui.main_menu.new_game_tooltip"
+msgstr "最初から新しいゲームを開始します。"
+
+msgid "ui.main_menu.options_tooltip"
+msgstr "ビデオ、オーディオ、コントロールなどのゲーム設定を調整します。"
+
+msgid "ui.main_menu.exit_tooltip"
+msgstr "ゲームを終了します。"
+
+msgid "ui.pause_menu.resume_game_tooltip"
+msgstr "現在のゲームを再開します。"
+
+msgid "ui.pause_menu.options_tooltip"
+msgstr "ビデオ、オーディオ、コントロールなどのゲーム設定を調整します。"
+
+msgid "ui.pause_menu.exit_tooltip"
+msgstr "ゲームを終了します。"

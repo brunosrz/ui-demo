@@ -1,0 +1,778 @@
+# Korean translations
+# Copyright (C) 2025 brunosrz
+# This file is distributed under the same license as the BodyLess project.
+# FIRST AUTHOR <bruno.soarxz@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BodyLess\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-13 15:00-0300\n"
+"PO-Revision-Date: 2025-08-24 10:00-0300\n"
+"Last-Translator: FULL NAME <bruno.soarxz@gmail.com>\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gemini\n"
+
+msgid "UI_MAIN_MENU_TITLE"
+msgstr "브루노의 템플릿"
+
+msgid "UI_NEW_GAME"
+msgstr "새 게임"
+
+msgid "UI_OPTIONS"
+msgstr "옵션"
+
+msgid "UI_EXIT"
+msgstr "종료"
+
+msgid "UI_PAUSE_MENU_TITLE"
+msgstr "일시정지됨"
+
+msgid "UI_RESUME_GAME"
+msgstr "게임 재개"
+
+msgid "UI_QUIT_CONFIRMATION_PROMPT"
+msgstr "정말로 종료하시겠습니까?"
+
+msgid "UI_YES"
+msgstr "예"
+
+msgid "UI_NO"
+msgstr "아니요"
+
+msgid "UI_SETTINGS_TITLE"
+msgstr "설정"
+
+msgid "UI_VIDEO"
+msgstr "비디오"
+
+msgid "UI_AUDIO"
+msgstr "오디오"
+
+msgid "UI_BACK"
+msgstr "뒤로"
+
+msgid "UI_VIDEO_OPTIONS"
+msgstr "비디오 옵션"
+
+msgid "UI_FULLSCREEN"
+msgstr "전체 화면"
+
+msgid "UI_AUDIO_OPTIONS"
+msgstr "오디오 옵션"
+
+msgid "UI_MASTER_VOLUME"
+msgstr "마스터"
+
+msgid "UI_MUSIC_VOLUME"
+msgstr "음악"
+
+msgid "UI_SFX_VOLUME"
+msgstr "음향 효과"
+
+msgid "UI_APPLY"
+msgstr "적용"
+
+msgid "UI_LANGUAGE"
+msgstr "언어"
+
+msgid "UI_LANGUAGE_OPTIONS"
+msgstr "언어 옵션"
+
+msgid "DEBUG_CONSOLE_READY"
+msgstr "디버그 콘솔 준비 완료. 'P'를 눌러 전환합니다."
+
+msgid "DEBUG_LOG_TITLE"
+msgstr "글로벌 이벤트 로그"
+
+msgid "DEBUG_GAME_SECTION"
+msgstr "[b]게임[/b]"
+
+msgid "DEBUG_GAME_VERSION"
+msgstr "  게임 버전: "
+
+msgid "DEBUG_GAME_STATE"
+msgstr "  상태: {state}"
+
+msgid "DEBUG_CURRENT_SCENE"
+msgstr "  현재 장면: {scene}"
+
+msgid "DEBUG_LAST_SAVE"
+msgstr "  마지막 저장: N/A"
+
+msgid "DEBUG_SYSTEM_SECTION"
+msgstr "[b]시스템[/b]"
+
+msgid "DEBUG_OS"
+msgstr "  OS: {os}"
+
+msgid "DEBUG_DISPLAY_SECTION"
+msgstr "[b]디스플레이[/b]"
+
+msgid "DEBUG_MONITOR"
+msgstr "  모니터: {monitor}"
+
+msgid "DEBUG_MONITOR_INFO"
+msgstr "모니터 {id}: {size} @ {hz}Hz"
+
+msgid "DEBUG_SIGNAL_RECEIVED"
+msgstr "신호 '{signal}' 수신됨"
+
+msgid "DEBUG_WITH_ARGS"
+msgstr " 인수: {{args}}"
+
+msgid "UI_MONITOR"
+msgstr "모니터"
+
+msgid "UI_WINDOW_MODE_WINDOWED"
+msgstr "창 모드"
+
+msgid "UI_WINDOW_MODE_FULLSCREEN"
+msgstr "전체 화면"
+
+msgid "UI_WINDOW_MODE_BORDERLESS"
+msgstr "테두리 없는 창"
+
+msgid "UI_RESOLUTION"
+msgstr "해상도"
+
+msgid "DEBUG_PROCESSOR"
+msgstr "  프로세서: {processor}"
+
+msgid "DEBUG_CORES"
+msgstr "  코어: {cores}"
+
+msgid "DEBUG_RAM"
+msgstr "  RAM: {ram}"
+
+msgid "DEBUG_VIDEO_ADAPTER"
+msgstr "  비디오 어댑터: {adapter}"
+
+msgid "DEBUG_VIDEO_DRIVER"
+msgstr "  비디오 드라이버: {driver}"
+
+msgid "DEBUG_VIDEO_RENDERER"
+msgstr "  비디오 렌더러: {renderer}"
+
+msgid "UI_DRS_OFF"
+msgstr "끄기"
+
+msgid "UI_DRS_CUSTOM"
+msgstr "사용자 지정"
+
+msgid "UI_FPS_CUSTOM"
+msgstr "사용자 지정"
+
+msgid "UI_VSYNC_OFF"
+msgstr "끄기"
+
+msgid "UI_VSYNC_ON"
+msgstr "켜기"
+
+msgid "UI_VSYNC_ADAPTIVE"
+msgstr "적응형"
+
+msgid "UI_QUALITY_LOW"
+msgstr "낮음"
+
+msgid "UI_QUALITY_MEDIUM"
+msgstr "중간"
+
+msgid "UI_QUALITY_HIGH"
+msgstr "높음"
+
+msgid "UI_COLORBLIND_OFF"
+msgstr "끄기"
+
+msgid "UI_COLORBLIND_PROTANOPIA"
+msgstr "적색맹"
+
+msgid "UI_COLORBLIND_DEUTERANOPIA"
+msgstr "녹색맹"
+
+msgid "UI_COLORBLIND_TRITANOPIA"
+msgstr "청색맹"
+
+msgid "UI_LANGUAGE_EN_US"
+msgstr "영어 (미국)"
+
+msgid "UI_LANGUAGE_EN_GB"
+msgstr "영어 (영국)"
+
+msgid "UI_LANGUAGE_PT_BR"
+msgstr "포르투갈어 (브라질)"
+
+msgid "UI_LANGUAGE_PT_PT"
+msgstr "포르투갈어 (포르투갈)"
+
+msgid "UI_LANGUAGE_ES_ES"
+msgstr "스페인어 (스페인)"
+
+msgid "UI_LANGUAGE_ES_LA"
+msgstr "스페인어 (아메리카)"
+
+msgid "UI_LANGUAGE_FR"
+msgstr "프랑스어"
+
+msgid "UI_LANGUAGE_DE"
+msgstr "독일어"
+
+msgid "UI_LANGUAGE_IT"
+msgstr "이탈리아어"
+
+msgid "UI_LANGUAGE_NL"
+msgstr "네덜란드어"
+
+msgid "UI_LANGUAGE_JA"
+msgstr "일본어"
+
+msgid "UI_LANGUAGE_KO"
+msgstr "한국어"
+
+msgid "UI_LANGUAGE_RU"
+msgstr "러시아어"
+
+msgid "UI_LANGUAGE_ZH"
+msgstr "중국어"
+
+msgid "UI_LANGUAGE_EN_IN"
+msgstr "영어 (인도)"
+
+msgid "UI_LANGUAGE_ZH_HANS"
+msgstr "중국어 (간체)"
+
+msgid "UI_LANGUAGE_ZH_HANT"
+msgstr "중국어 (번체)"
+
+msgid "UI_LANGUAGE_SW"
+msgstr "스와힐리어"
+
+msgid "UI_LANGUAGE_AF"
+msgstr "아프리칸스어"
+
+msgid "UI_LANGUAGE_PL"
+msgstr "폴란드어"
+
+msgid "UI_LANGUAGE_TR"
+msgstr "터키어"
+
+msgid "UI_LANGUAGE_HI"
+msgstr "힌디어"
+
+msgid "UI_LANGUAGE_ID"
+msgstr "인도네시아어"
+
+msgid "UI_LANGUAGE_VI"
+msgstr "베트남어"
+
+msgid "UI_LANGUAGE_AR"
+msgstr "아랍어"
+
+msgid "UI_LANGUAGE_FIL"
+msgstr "필리핀어"
+
+msgid "UI_LANGUAGE_HA"
+msgstr "하우사어"
+
+msgid "UI_LANGUAGE_AM"
+msgstr "암하라어"
+
+msgid "UI_LANGUAGE_YO"
+msgstr "요루바어"
+
+msgid "UI_LANGUAGE_BN"
+msgstr "벵골어"
+
+msgid "TOOLTIP_GAMMA_CORRECTION_TITLE"
+msgstr "감마 보정"
+
+msgid "TOOLTIP_GAMMA_CORRECTION_DESC"
+msgstr "게임 비주얼의 전반적인 밝기와 대비를 조정합니다."
+
+msgid "TOOLTIP_MASTER_VOLUME_TITLE"
+msgstr "마스터 볼륨"
+
+msgid "TOOLTIP_MASTER_VOLUME_DESC"
+msgstr "전반적인 게임 볼륨을 제어합니다."
+
+msgid "TOOLTIP_MUSIC_VOLUME_TITLE"
+msgstr "음악 볼륨"
+
+msgid "TOOLTIP_MUSIC_VOLUME_DESC"
+msgstr "게임 내 음악 볼륨을 제어합니다."
+
+msgid "TOOLTIP_SFX_VOLUME_TITLE"
+msgstr "음향 효과 볼륨"
+
+msgid "TOOLTIP_SFX_VOLUME_DESC"
+msgstr "음향 효과 볼륨을 제어합니다."
+
+msgid "TOOLTIP_MONITOR_TITLE"
+msgstr "모니터 선택"
+
+msgid "TOOLTIP_MONITOR_DESC"
+msgstr "게임이 실행될 모니터를 선택합니다."
+
+msgid "TOOLTIP_WINDOW_MODE_TITLE"
+msgstr "창 모드"
+
+msgid "TOOLTIP_WINDOW_MODE_DESC"
+msgstr "게임 창이 표시되는 방식을 변경합니다 (창 모드, 전체 화면, 테두리 없는 창)."
+
+msgid "TOOLTIP_RESOLUTION_TITLE"
+msgstr "해상도"
+
+msgid "TOOLTIP_RESOLUTION_DESC"
+msgstr "게임의 디스플레이 해상도를 설정합니다."
+
+msgid "TOOLTIP_ASPECT_RATIO_TITLE"
+msgstr "화면 비율"
+
+msgid "TOOLTIP_ASPECT_RATIO_DESC"
+msgstr "화면 비율을 조정합니다 (예: 16:9, 4:3)."
+
+msgid "TOOLTIP_DYNAMIC_RENDER_SCALE_TITLE"
+msgstr "동적 렌더링 스케일"
+
+msgid "TOOLTIP_DYNAMIC_RENDER_SCALE_DESC"
+msgstr "더 나은 성능을 위해 렌더링 해상도를 동적으로 조정합니다."
+
+msgid "TOOLTIP_RENDER_SCALE_TITLE"
+msgstr "렌더링 스케일"
+
+msgid "TOOLTIP_RENDER_SCALE_DESC"
+msgstr "내부 렌더링 해상도를 수동으로 조정합니다."
+
+msgid "TOOLTIP_FRAME_RATE_LIMIT_TITLE"
+msgstr "프레임 속도 제한"
+
+msgid "TOOLTIP_FRAME_RATE_LIMIT_DESC"
+msgstr "게임이 렌더링할 초당 최대 프레임 수를 설정합니다."
+
+msgid "TOOLTIP_MAX_FRAME_RATE_TITLE"
+msgstr "최대 프레임 속도"
+
+msgid "TOOLTIP_MAX_FRAME_RATE_DESC"
+msgstr "사용자 지정 제한이 활성화된 경우 특정 최대 프레임 속도를 설정합니다."
+
+msgid "TOOLTIP_VSYNC_MODE_TITLE"
+msgstr "VSync 모드"
+
+msgid "TOOLTIP_VSYNC_MODE_DESC"
+msgstr "'스크린 티어링'을 방지하기 위해 모니터의 재생률과 프레임을 동기화합니다."
+
+msgid "TOOLTIP_CONTRAST_TITLE"
+msgstr "대비"
+
+msgid "TOOLTIP_CONTRAST_DESC"
+msgstr "밝은 영역과 어두운 영역의 차이를 조정합니다."
+
+msgid "TOOLTIP_BRIGHTNESS_TITLE"
+msgstr "밝기"
+
+msgid "TOOLTIP_BRIGHTNESS_DESC"
+msgstr "게임의 전반적인 밝기를 조정합니다."
+
+msgid "TOOLTIP_SHADERS_QUALITY_TITLE"
+msgstr "셰이더 품질"
+
+msgid "TOOLTIP_SHADERS_QUALITY_DESC"
+msgstr "셰이더의 시각적 품질을 정의합니다."
+
+msgid "TOOLTIP_EFFECTS_QUALITY_TITLE"
+msgstr "효과 품질"
+
+msgid "TOOLTIP_EFFECTS_QUALITY_DESC"
+msgstr "특수 효과의 시각적 품질을 정의합니다."
+
+msgid "TOOLTIP_COLORBLIND_MODE_TITLE"
+msgstr "색맹 모드"
+
+msgid "TOOLTIP_COLORBLIND_MODE_DESC"
+msgstr "색맹 (적색맹, 녹색맹, 청색맹)을 위한 색상 필터를 적용합니다."
+
+msgid "TOOLTIP_REDUCE_SCREEN_SHAKE_TITLE"
+msgstr "화면 흔들림 감소"
+
+msgid "TOOLTIP_REDUCE_SCREEN_SHAKE_DESC"
+msgstr "화면 흔들림 효과의 강도를 줄입니다."
+
+msgid "TOOLTIP_UI_SCALE_TITLE"
+msgstr "UI 스케일"
+
+msgid "TOOLTIP_UI_SCALE_DESC"
+msgstr "사용자 인터페이스 요소의 크기를 조정합니다."
+
+msgid "ITEM_HEALING_POTION_NAME"
+msgstr "회복 물약"
+
+msgid "ITEM_HEALING_POTION_DESC"
+msgstr "체력의 일부를 회복합니다."
+
+msgid "ITEM_DAMAGE_BOOST_NAME"
+msgstr "피해 증폭 물약"
+
+msgid "ITEM_DAMAGE_BOOST_DESC"
+msgstr "일시적으로 공격 피해를 증가시킵니다."
+
+msgid "ITEM_GENERIC_NAME"
+msgstr "일반 아이템"
+
+msgid "ITEM_GENERIC_DESC"
+msgstr "자리 표시자 아이템입니다."
+
+msgid "WEAPON_PUNCH_NAME"
+msgstr "펀치"
+
+msgid "WEAPON_PUNCH_DESC"
+msgstr "기본 근접 공격입니다."
+
+msgid "WEAPON_SWORD_NAME"
+msgstr "검"
+
+msgid "WEAPON_SWORD_DESC"
+msgstr "근접 전투를 위한 날카로운 칼날입니다."
+
+msgid "WEAPON_BOW_NAME"
+msgstr "활"
+
+msgid "WEAPON_BOW_DESC"
+msgstr "조용한 처치를 위한 장거리 무기입니다."
+
+msgid "WEAPON_PISTOL_NAME"
+msgstr "권총"
+
+msgid "WEAPON_PISTOL_DESC"
+msgstr "빠른 사격을 위한 믿을 수 있는 권총입니다."
+
+msgid "WEAPON_GRENADE_NAME"
+msgstr "수류탄"
+
+msgid "WEAPON_GRENADE_DESC"
+msgstr "범위 피해를 위한 폭발 장치입니다."
+
+msgid "WEAPON_MACHINE_GUN_NAME"
+msgstr "기관총"
+
+msgid "WEAPON_MACHINE_GUN_DESC"
+msgstr "높은 발사 속도, 근거리에서 파괴적입니다."
+
+msgid "ENEMY_DUMMY_NAME"
+msgstr "훈련용 더미"
+
+msgid "ENEMY_DUMMY_DESC"
+msgstr "연습용 고정 목표물입니다."
+
+msgid "ENEMY_PATROL_BOT_NAME"
+msgstr "순찰 로봇"
+
+msgid "ENEMY_PATROL_BOT_DESC"
+msgstr "고정된 경로를 순찰하는 로봇입니다."
+
+msgid "ENEMY_HUNTER_NAME"
+msgstr "사냥꾼"
+
+msgid "ENEMY_HUNTER_DESC"
+msgstr "플레이어를 적극적으로 추격하는 민첩한 적입니다."
+
+msgid "UI_INVENTORY_TITLE"
+msgstr "인벤토리"
+
+msgid "UI_INVENTORY_USE_BUTTON"
+msgstr "사용"
+
+msgid "UI_INVENTORY_DROP_BUTTON"
+msgstr "버리기"
+
+msgid "UI_INVENTORY_EMPTY_SLOT"
+msgstr "빈 슬롯"
+
+msgid "UI_HEALTH"
+msgstr "체력"
+
+msgid "UI_AMMO"
+msgstr "탄약"
+
+msgid "UI_RELOAD_PROMPT"
+msgstr "재장전하려면 R을 누르세요"
+
+msgid "TOAST_SETTINGS_SAVED_TITLE"
+msgstr "설정 저장됨"
+
+msgid "TOAST_SETTINGS_SAVED_MESSAGE"
+msgstr "게임 설정이 저장되었습니다."
+
+msgid "TOAST_ITEM_COLLECTED_TITLE"
+msgstr "아이템 획득"
+
+msgid "TOAST_ITEM_COLLECTED_MESSAGE"
+msgstr "아이템을 획득했습니다!"
+
+msgid "TOAST_ERROR_SAVE_FAILED_TITLE"
+msgstr "저장 실패"
+
+msgid "TOAST_ERROR_SAVE_FAILED_MESSAGE"
+msgstr "게임 진행 상황을 저장하지 못했습니다."
+
+msgid "POPOVER_CONFIRM_USE_ITEM_TITLE"
+msgstr "사용 확인"
+
+msgid "POPOVER_CONFIRM_USE_ITEM_MESSAGE"
+msgstr "이 아이템을 사용하시겠습니까?"
+
+msgid "POPOVER_YES"
+msgstr "예"
+
+msgid "POPOVER_NO"
+msgstr "아니요"
+
+msgid "COACH_MARK_WELCOME_TITLE"
+msgstr "환영합니다!"
+
+msgid "COACH_MARK_WELCOME_MESSAGE"
+msgstr "게임에 오신 것을 환영합니다! 기본을 배워봅시다."
+
+msgid "COACH_MARK_MOVEMENT_TITLE"
+msgstr "이동"
+
+msgid "COACH_MARK_MOVEMENT_MESSAGE"
+msgstr "WASD 또는 왼쪽 아날로그 스틱을 사용하여 이동합니다."
+
+msgid "COACH_MARK_PAUSE_TITLE"
+msgstr "게임 일시정지"
+
+msgid "COACH_MARK_PAUSE_MESSAGE"
+msgstr "ESC 또는 Start를 눌러 게임을 일시정지하고 메뉴에 액세스합니다."
+
+msgid "COACH_MARK_INVENTORY_TITLE"
+msgstr "인벤토리"
+
+msgid "COACH_MARK_INVENTORY_MESSAGE"
+msgstr "E 또는 Select를 눌러 인벤토리를 엽니다."
+
+msgid "COACH_MARK_SKIP_BUTTON"
+msgstr "튜토리얼 건너뛰기"
+
+msgid "COACH_MARK_NEXT_BUTTON"
+msgstr "다음"
+
+msgid "INPUT_INVENTORY_NAME"
+msgstr "인벤토리"
+
+msgid "INPUT_RELOAD_NAME"
+msgstr "재장전"
+
+msgid "INPUT_SPECIAL_NAME"
+msgstr "특수 능력"
+
+msgid "INPUT_SPRINT_NAME"
+msgstr "질주"
+
+msgid "INPUT_CROUCH_NAME"
+msgstr "웅크리기"
+
+msgid "INPUT_MOVE_LEFT_NAME"
+msgstr "왼쪽으로 이동"
+
+msgid "INPUT_MOVE_RIGHT_NAME"
+msgstr "오른쪽으로 이동"
+
+msgid "INPUT_MOVE_UP_NAME"
+msgstr "위로 이동"
+
+msgid "INPUT_MOVE_DOWN_NAME"
+msgstr "아래로 이동"
+
+msgid "INPUT_JUMP_NAME"
+msgstr "점프"
+
+msgid "INPUT_ATTACK_NAME"
+msgstr "공격"
+
+msgid "TOAST_LOAD_SUCCESS_MESSAGE"
+msgstr "게임이 성공적으로 로드되었습니다!"
+
+msgid "TOAST_ERROR_LOAD_FAILED_MESSAGE"
+msgstr "게임 진행 상황을 로드하지 못했습니다."
+
+msgid "TOAST_ITEM_USED_MESSAGE"
+msgstr "아이템 사용: {item_name}!"
+
+msgid "TOAST_ITEM_EQUIPPED_MESSAGE"
+msgstr "아이템 장착: {item_name}!"
+
+msgid "UI_ASPECT_RATIO"
+msgstr "화면 비율"
+
+msgid "UI_UPSCALE_MODE"
+msgstr "업스케일 모드"
+
+msgid "UI_UPSCALING_QUALITY"
+msgstr "업스케일 품질"
+
+msgid "UI_UPSCALING_NONE"
+msgstr "없음"
+
+msgid "UI_FSR_BALANCED"
+msgstr "FSR 균형"
+
+msgid "UI_UPSCALE_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_UPSCALE_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_CHANGE_GAME"
+msgstr "게임 변경"
+
+msgid "UI_ASPECT_FREE"
+msgstr "자유"
+
+msgid "UI_ASPECT_KEEP"
+msgstr "화면 비율 유지"
+
+msgid "UI_ASPECT_KEEP_WIDTH"
+msgstr "너비 유지"
+
+msgid "UI_ASPECT_KEEP_HEIGHT"
+msgstr "높이 유지"
+
+msgid "UI_ASPECT_EXPAND"
+msgstr "확장"
+
+msgid "UI_DYNAMIC_RENDER_NONE"
+msgstr "없음"
+
+msgid "UI_DYNAMIC_RENDER_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_DYNAMIC_RENDER_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_FRAME_RATE_NO_LIMIT"
+msgstr "제한 없음"
+
+msgid "UI_FRAME_RATE_VSYNC"
+msgstr "VSync"
+
+msgid "UI_FRAME_RATE_ADAPTIVE_VSYNC"
+msgstr "적응형 VSync"
+
+msgid "UI_FRAME_RATE_CUSTOM"
+msgstr "사용자 지정"
+
+msgid "UI_VSYNC_ENABLED"
+msgstr "활성화됨"
+
+msgid "UI_VSYNC_DISABLED"
+msgstr "비활성화됨"
+
+msgid "UI_COLORBLIND_NONE"
+msgstr "없음"
+
+msgid "UI_RENDER_SCALE"
+msgstr "렌더링 스케일"
+
+msgid "UI_FRAME_RATE_LIMIT"
+msgstr "FPS 제한"
+
+msgid "UI_MAX_FRAME_RATE"
+msgstr "최대 FPS"
+
+msgid "UI_VSYNC"
+msgstr "VSync"
+
+msgid "UI_GAMMA_CORRECTION"
+msgstr "감마 보정"
+
+msgid "UI_CONTRAST"
+msgstr "대비"
+
+msgid "UI_BRIGHTNESS"
+msgstr "밝기"
+
+msgid "UI_REDUCE_SCREEN_SHAKE"
+msgstr "화면 흔들림 감소"
+
+msgid "UI_SCALE_PRESET"
+msgstr "UI 스케일"
+
+msgid "UI_WINDOW_MODE"
+msgstr "창 모드"
+
+msgid "UI_INPUTMAP"
+msgstr "키 매핑"
+
+msgid "UI_INPUT_ACTION"
+msgstr "액션"
+
+msgid "UI_INPUT_KEYBOARD"
+msgstr "키보드"
+
+msgid "UI_INPUT_CONTROLLER"
+msgstr "컨트롤러"
+
+msgid "UI_INPUT_MOUSE"
+msgstr "마우스"
+
+msgid "UI_INPUT_PRESS_KEY"
+msgstr "키를 누르세요..."
+
+msgid "INPUT_PAUSE_NAME"
+msgstr "일시정지"
+
+msgid "INPUT_TOGGLE_CONSOLE_NAME"
+msgstr "콘솔 전환"
+
+msgid "INPUT_MUSIC_CHANGE_NAME"
+msgstr "음악 변경"
+
+msgid "UI_FSR_ULTRA_QUALITY"
+msgstr "FSR 울트라 품질"
+
+msgid "UI_FSR_QUALITY"
+msgstr "FSR 품질"
+
+msgid "UI_FSR_PERFORMANCE"
+msgstr "FSR 성능"
+
+msgid "UI_FSR_ULTRA_PERFORMANCE"
+msgstr "FSR 울트라 성능"
+
+msgid "UI_SCALE_100_PERCENT"
+msgstr "100%"
+
+msgid "UI_SCALE_125_PERCENT"
+msgstr "125%"
+
+msgid "UI_SCALE_150_PERCENT"
+msgstr "150%"
+
+msgid "UI_SCALE_175_PERCENT"
+msgstr "175%"
+
+msgid "UI_SCALE_200_PERCENT"
+msgstr "200%"
+
+msgid "ui.main_menu.new_game_tooltip"
+msgstr "처음부터 새 게임을 시작합니다."
+
+msgid "ui.main_menu.options_tooltip"
+msgstr "비디오, 오디오, 컨트롤과 같은 게임 설정을 조정합니다."
+
+msgid "ui.main_menu.exit_tooltip"
+msgstr "게임을 종료합니다."
+
+msgid "ui.pause_menu.resume_game_tooltip"
+msgstr "현재 게임을 재개합니다."
+
+msgid "ui.pause_menu.options_tooltip"
+msgstr "비디오, 오디오, 컨트롤과 같은 게임 설정을 조정합니다."
+
+msgid "ui.pause_menu.exit_tooltip"
+msgstr "게임을 종료합니다."

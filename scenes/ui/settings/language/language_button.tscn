@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dqh8145gjgpc7"]
+
+[node name="LanguageButton" type="Button"]
+size_flags_vertical = 3
+text = "UI_LANGUAGE"

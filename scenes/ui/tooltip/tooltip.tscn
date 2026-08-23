@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b5asvf13en5hn"]
+
+[node name="tooltip" type="PanelContainer"]
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 2
+mouse_filter = 2
+text = "tooltip Text"
+fit_content = true

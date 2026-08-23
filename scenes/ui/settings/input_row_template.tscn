@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1denbewpw7u5"]
+
+[ext_resource type="Script" uid="uid://cwcfb1vx78kpu" path="res://scripts/ui/settings/input_row_template.gd" id="1"]
+
+[node name="InputRowTemplate" type="HBoxContainer"]
+theme_override_constants/separation = 20
+script = ExtResource("1")
+
+[node name="ActionLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Action Name"
+vertical_alignment = 1
+
+[node name="KeyButton" type="Button" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "KEY"
+
+[node name="ControllerButton" type="Button" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "CONTROLLER"
+
+[node name="MouseButton" type="Button" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "UI_INPUT_MOUSE"
+
+[connection signal="pressed" from="KeyButton" to="." method="_on_key_button_pressed"]
+[connection signal="pressed" from="ControllerButton" to="." method="_on_controller_button_pressed"]
+[connection signal="pressed" from="MouseButton" to="." method="_on_mouse_button_pressed"]

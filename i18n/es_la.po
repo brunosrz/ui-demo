@@ -1,0 +1,658 @@
+# Spanish (America) translations
+# Copyright (C) 2025 brunosrz
+# This file is distributed under the same license as the BodyLess project.
+# FIRST AUTHOR <bruno.soarxz@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BodyLess\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-13 15:00-0300\n"
+"PO-Revision-Date: 2025-08-24 10:00-0300\n"
+"Last-Translator: FULL NAME <bruno.soarxz@gmail.com>\n"
+"Language-Team: Spanish (America)\n"
+"Language: es_LA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gemini\n"
+
+msgid "UI_MAIN_MENU_TITLE"
+msgstr "Plantilla de Bruno"
+
+msgid "UI_NEW_GAME"
+msgstr "Nuevo Juego"
+
+msgid "UI_OPTIONS"
+msgstr "Opciones"
+
+msgid "UI_EXIT"
+msgstr "Salir"
+
+msgid "UI_PAUSE_MENU_TITLE"
+msgstr "Pausado"
+
+msgid "UI_RESUME_GAME"
+msgstr "Volver al Juego"
+
+msgid "UI_QUIT_CONFIRMATION_PROMPT"
+msgstr "¿Desea realmente salir?"
+
+msgid "UI_YES"
+msgstr "Sí"
+
+msgid "UI_NO"
+msgstr "No"
+
+msgid "UI_SETTINGS_TITLE"
+msgstr "Configuración"
+
+msgid "UI_VIDEO"
+msgstr "Video"
+
+msgid "UI_AUDIO"
+msgstr "Audio"
+
+msgid "UI_BACK"
+msgstr "Volver"
+
+msgid "UI_VIDEO_OPTIONS"
+msgstr "Opciones de Video"
+
+msgid "UI_FULLSCREEN"
+msgstr "Pantalla Completa"
+
+msgid "UI_AUDIO_OPTIONS"
+msgstr "Opciones de Audio"
+
+msgid "UI_MASTER_VOLUME"
+msgstr "General"
+
+msgid "UI_MUSIC_VOLUME"
+msgstr "Música"
+
+msgid "UI_SFX_VOLUME"
+msgstr "Efectos de Sonido"
+
+msgid "UI_APPLY"
+msgstr "Aplicar"
+
+msgid "UI_LANGUAGE"
+msgstr "Idioma"
+
+msgid "UI_LANGUAGE_OPTIONS"
+msgstr "Opciones de Idioma"
+
+msgid "DEBUG_CONSOLE_READY"
+msgstr "Consola de Depuración lista. Presiona 'P' para alternar."
+
+msgid "DEBUG_LOG_TITLE"
+msgstr "Registro de Eventos Globales"
+
+msgid "DEBUG_GAME_SECTION"
+msgstr "[b]Juego[/b]"
+
+msgid "DEBUG_GAME_VERSION"
+msgstr "  Versión del Juego: "
+
+msgid "DEBUG_GAME_STATE"
+msgstr "  Estado: {state}"
+
+msgid "DEBUG_CURRENT_SCENE"
+msgstr "  Escena Actual: {scene}"
+
+msgid "DEBUG_LAST_SAVE"
+msgstr "  Último Guardado: N/A"
+
+msgid "DEBUG_SYSTEM_SECTION"
+msgstr "[b]Sistema[/b]"
+
+msgid "DEBUG_OS"
+msgstr "  SO: {os}"
+
+msgid "DEBUG_DISPLAY_SECTION"
+msgstr "[b]Pantalla[/b]"
+
+msgid "DEBUG_MONITOR"
+msgstr "  Monitor: {monitor}"
+
+msgid "DEBUG_MONITOR_INFO"
+msgstr "Monitor {id}: {size} @ {hz}Hz"
+
+msgid "DEBUG_SIGNAL_RECEIVED"
+msgstr "Señal '{signal}' recibida"
+
+msgid "DEBUG_WITH_ARGS"
+msgstr " con argumentos: {{args}}"
+
+msgid "UI_MONITOR"
+msgstr "Monitor"
+
+msgid "UI_WINDOW_MODE_WINDOWED"
+msgstr "Ventana"
+
+msgid "UI_WINDOW_MODE_FULLSCREEN"
+msgstr "Pantalla Completa"
+
+msgid "UI_WINDOW_MODE_BORDERLESS"
+msgstr "Ventana sin Bordes"
+
+msgid "UI_RESOLUTION"
+msgstr "Resolución"
+
+msgid "DEBUG_PROCESSOR"
+msgstr "  Procesador: {processor}"
+
+msgid "DEBUG_CORES"
+msgstr "  Núcleos: {cores}"
+
+msgid "DEBUG_RAM"
+msgstr "  RAM: {ram}"
+
+msgid "DEBUG_VIDEO_ADAPTER"
+msgstr "  Adaptador de Video: {adapter}"
+
+msgid "DEBUG_VIDEO_DRIVER"
+msgstr "  Controlador de Video: {driver}"
+
+msgid "DEBUG_VIDEO_RENDERER"
+msgstr "  Renderizador de Video: {renderer}"
+
+msgid "UI_DRS_OFF"
+msgstr "Apagado"
+
+msgid "UI_DRS_CUSTOM"
+msgstr "Personalizado"
+
+msgid "UI_FPS_CUSTOM"
+msgstr "Personalizado"
+
+msgid "UI_VSYNC_OFF"
+msgstr "Apagado"
+
+msgid "UI_VSYNC_ON"
+msgstr "Encendido"
+
+msgid "UI_VSYNC_ADAPTIVE"
+msgstr "Adaptativo"
+
+msgid "UI_QUALITY_LOW"
+msgstr "Baja"
+
+msgid "UI_QUALITY_MEDIUM"
+msgstr "Media"
+
+msgid "UI_QUALITY_HIGH"
+msgstr "Alta"
+
+msgid "UI_COLORBLIND_OFF"
+msgstr "Apagado"
+
+msgid "UI_COLORBLIND_PROTANOPIA"
+msgstr "Protanopia"
+
+msgid "UI_COLORBLIND_DEUTERANOPIA"
+msgstr "Deuteranopia"
+
+msgid "UI_COLORBLIND_TRITANOPIA"
+msgstr "Tritanopia"
+
+msgid "UI_LANGUAGE_EN_US"
+msgstr "Inglés (EE. UU.)"
+
+msgid "UI_LANGUAGE_EN_GB"
+msgstr "Inglés (Reino Unido)"
+
+msgid "UI_LANGUAGE_PT_BR"
+msgstr "Portugués (Brasil)"
+
+msgid "UI_LANGUAGE_PT_PT"
+msgstr "Portugués (Portugal)"
+
+msgid "UI_LANGUAGE_ES_ES"
+msgstr "Español (España)"
+
+msgid "UI_LANGUAGE_ES_LA"
+msgstr "Español (América)"
+
+msgid "UI_LANGUAGE_FR"
+msgstr "Francés"
+
+msgid "UI_LANGUAGE_DE"
+msgstr "Alemán"
+
+msgid "UI_LANGUAGE_IT"
+msgstr "Italiano"
+
+msgid "UI_LANGUAGE_NL"
+msgstr "Holandés"
+
+msgid "UI_LANGUAGE_JA"
+msgstr "Japonés"
+
+msgid "UI_LANGUAGE_KO"
+msgstr "Coreano"
+
+msgid "UI_LANGUAGE_RU"
+msgstr "Ruso"
+
+msgid "UI_LANGUAGE_ZH"
+msgstr "Chino"
+
+msgid "UI_LANGUAGE_EN_IN"
+msgstr "Inglés (India)"
+
+msgid "UI_LANGUAGE_ZH_HANS"
+msgstr "Chino (Simplificado)"
+
+msgid "UI_LANGUAGE_ZH_HANT"
+msgstr "Chino (Tradicional)"
+
+msgid "UI_LANGUAGE_SW"
+msgstr "Suajili"
+
+msgid "UI_LANGUAGE_AF"
+msgstr "Afrikáans"
+
+msgid "UI_LANGUAGE_PL"
+msgstr "Polaco"
+
+msgid "UI_LANGUAGE_TR"
+msgstr "Turco"
+
+msgid "UI_LANGUAGE_HI"
+msgstr "Hindi"
+
+msgid "UI_LANGUAGE_ID"
+msgstr "Indonesio"
+
+msgid "UI_LANGUAGE_VI"
+msgstr "Vietnamita"
+
+msgid "UI_LANGUAGE_AR"
+msgstr "Árabe"
+
+msgid "UI_LANGUAGE_FIL"
+msgstr "Filipino"
+
+msgid "UI_LANGUAGE_HA"
+msgstr "Hausa"
+
+msgid "UI_LANGUAGE_AM"
+msgstr "Amárico"
+
+msgid "UI_LANGUAGE_YO"
+msgstr "Yoruba"
+
+msgid "UI_LANGUAGE_BN"
+msgstr "Bengalí"
+
+msgid "ITEM_HEALING_POTION_NAME"
+msgstr "Poción de Curación"
+
+msgid "ITEM_HEALING_POTION_DESC"
+msgstr "Restaura una porción de tu vida."
+
+msgid "ITEM_DAMAGE_BOOST_NAME"
+msgstr "Poción de Aumento de Daño"
+
+msgid "ITEM_DAMAGE_BOOST_DESC"
+msgstr "Aumenta temporalmente tu daño de ataque."
+
+msgid "ITEM_GENERIC_NAME"
+msgstr "Objeto Genérico"
+
+msgid "ITEM_GENERIC_DESC"
+msgstr "Un objeto de relleno."
+
+msgid "WEAPON_PUNCH_NAME"
+msgstr "Puñetazo"
+
+msgid "WEAPON_PUNCH_DESC"
+msgstr "Tu ataque cuerpo a cuerpo básico."
+
+msgid "WEAPON_SWORD_NAME"
+msgstr "Espada"
+
+msgid "WEAPON_SWORD_DESC"
+msgstr "Una hoja afilada para combate cercano."
+
+msgid "WEAPON_BOW_NAME"
+msgstr "Arco"
+
+msgid "WEAPON_BOW_DESC"
+msgstr "Un arma de largo alcance para eliminaciones silenciosas."
+
+msgid "WEAPON_PISTOL_NAME"
+msgstr "Pistola"
+
+msgid "WEAPON_PISTOL_DESC"
+msgstr "Un arma de mano fiable para disparos rápidos."
+
+msgid "WEAPON_GRENADE_NAME"
+msgstr "Granada"
+
+msgid "WEAPON_GRENADE_DESC"
+msgstr "Dispositivo explosivo para daño en área."
+
+msgid "WEAPON_MACHINE_GUN_NAME"
+msgstr "Ametralladora"
+
+msgid "WEAPON_MACHINE_GUN_DESC"
+msgstr "Alta cadencia de fuego, devastadora a corta distancia."
+
+msgid "ENEMY_DUMMY_NAME"
+msgstr "Muñeco de Entrenamiento"
+
+msgid "ENEMY_DUMMY_DESC"
+msgstr "Un objetivo estacionario para practicar."
+
+msgid "ENEMY_PATROL_BOT_NAME"
+msgstr "Robot Patrulla"
+
+msgid "ENEMY_PATROL_BOT_DESC"
+msgstr "Un robot que patrulla un camino fijo."
+
+msgid "ENEMY_HUNTER_NAME"
+msgstr "Cazador"
+
+msgid "ENEMY_HUNTER_DESC"
+msgstr "Un enemigo ágil que persigue activamente al jugador."
+
+msgid "UI_INVENTORY_TITLE"
+msgstr "Inventario"
+
+msgid "UI_INVENTORY_USE_BUTTON"
+msgstr "Usar"
+
+msgid "UI_INVENTORY_DROP_BUTTON"
+msgstr "Soltar"
+
+msgid "UI_INVENTORY_EMPTY_SLOT"
+msgstr "Espacio Vacío"
+
+msgid "UI_HEALTH"
+msgstr "Vida"
+
+msgid "UI_AMMO"
+msgstr "Munición"
+
+msgid "UI_RELOAD_PROMPT"
+msgstr "Presiona R para Recargar"
+
+msgid "TOAST_SETTINGS_SAVED_TITLE"
+msgstr "Configuración Guardada"
+
+msgid "TOAST_SETTINGS_SAVED_MESSAGE"
+msgstr "Tu configuración de juego ha sido guardada."
+
+msgid "TOAST_ITEM_COLLECTED_TITLE"
+msgstr "Objeto Recogido"
+
+msgid "TOAST_ITEM_COLLECTED_MESSAGE"
+msgstr "¡Has recogido un objeto!"
+
+msgid "TOAST_ERROR_SAVE_FAILED_TITLE"
+msgstr "Error al Guardar"
+
+msgid "TOAST_ERROR_SAVE_FAILED_MESSAGE"
+msgstr "Error al guardar el progreso del juego."
+
+msgid "POPOVER_CONFIRM_USE_ITEM_TITLE"
+msgstr "Confirmar Uso"
+
+msgid "POPOVER_CONFIRM_USE_ITEM_MESSAGE"
+msgstr "¿Estás seguro de que quieres usar este objeto?"
+
+msgid "POPOVER_YES"
+msgstr "Sí"
+
+msgid "POPOVER_NO"
+msgstr "No"
+
+msgid "COACH_MARK_WELCOME_TITLE"
+msgstr "¡Bienvenido!"
+
+msgid "COACH_MARK_WELCOME_MESSAGE"
+msgstr "¡Bienvenido al juego! Vamos a aprender lo básico."
+
+msgid "COACH_MARK_MOVEMENT_TITLE"
+msgstr "Movimiento"
+
+msgid "COACH_MARK_MOVEMENT_MESSAGE"
+msgstr "Usa WASD o el Stick Analógico Izquierdo para moverte."
+
+msgid "COACH_MARK_PAUSE_TITLE"
+msgstr "Pausar Juego"
+
+msgid "COACH_MARK_PAUSE_MESSAGE"
+msgstr "Presiona ESC o Start para pausar el juego y acceder a los menús."
+
+msgid "COACH_MARK_INVENTORY_TITLE"
+msgstr "Inventario"
+
+msgid "COACH_MARK_INVENTORY_MESSAGE"
+msgstr "Presiona E o Select para abrir tu inventario."
+
+msgid "COACH_MARK_SKIP_BUTTON"
+msgstr "Saltar Tutorial"
+
+msgid "COACH_MARK_NEXT_BUTTON"
+msgstr "Siguiente"
+
+msgid "INPUT_INVENTORY_NAME"
+msgstr "Inventario"
+
+msgid "INPUT_RELOAD_NAME"
+msgstr "Recargar"
+
+msgid "INPUT_SPECIAL_NAME"
+msgstr "Habilidad Especial"
+
+msgid "INPUT_SPRINT_NAME"
+msgstr "Correr"
+
+msgid "INPUT_CROUCH_NAME"
+msgstr "Agacharse"
+
+msgid "INPUT_MOVE_LEFT_NAME"
+msgstr "Mover Izquierda"
+
+msgid "INPUT_MOVE_RIGHT_NAME"
+msgstr "Mover Derecha"
+
+msgid "INPUT_MOVE_UP_NAME"
+msgstr "Mover Arriba"
+
+msgid "INPUT_MOVE_DOWN_NAME"
+msgstr "Mover Abajo"
+
+msgid "INPUT_JUMP_NAME"
+msgstr "Saltar"
+
+msgid "INPUT_ATTACK_NAME"
+msgstr "Atacar"
+
+msgid "TOAST_LOAD_SUCCESS_MESSAGE"
+msgstr "¡Juego cargado con éxito!"
+
+msgid "TOAST_ERROR_LOAD_FAILED_MESSAGE"
+msgstr "Error al cargar el progreso del juego."
+
+msgid "TOAST_ITEM_USED_MESSAGE"
+msgstr "¡Objeto usado: {item_name}!"
+
+msgid "TOAST_ITEM_EQUIPPED_MESSAGE"
+msgstr "¡Objeto equipado: {item_name}!"
+
+msgid "UI_ASPECT_RATIO"
+msgstr "Relación de Aspecto"
+
+msgid "UI_UPSCALE_MODE"
+msgstr "Modo de Escalado"
+
+msgid "UI_UPSCALING_QUALITY"
+msgstr "Calidad de Escalado"
+
+msgid "UI_UPSCALING_NONE"
+msgstr "Ninguno"
+
+msgid "UI_FSR_BALANCED"
+msgstr "FSR Equilibrado"
+
+msgid "UI_UPSCALE_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_UPSCALE_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_CHANGE_GAME"
+msgstr "Cambiar Juego"
+
+msgid "UI_ASPECT_FREE"
+msgstr "Libre"
+
+msgid "UI_ASPECT_KEEP"
+msgstr "Mantener Relación de Aspecto"
+
+msgid "UI_ASPECT_KEEP_WIDTH"
+msgstr "Mantener Ancho"
+
+msgid "UI_ASPECT_KEEP_HEIGHT"
+msgstr "Mantener Alto"
+
+msgid "UI_ASPECT_EXPAND"
+msgstr "Expandir"
+
+msgid "UI_DYNAMIC_RENDER_NONE"
+msgstr "Ninguno"
+
+msgid "UI_DYNAMIC_RENDER_FSR1"
+msgstr "FSR 1.0"
+
+msgid "UI_DYNAMIC_RENDER_FSR2"
+msgstr "FSR 2.0"
+
+msgid "UI_FRAME_RATE_NO_LIMIT"
+msgstr "Sin Límite"
+
+msgid "UI_FRAME_RATE_VSYNC"
+msgstr "VSync"
+
+msgid "UI_FRAME_RATE_ADAPTIVE_VSYNC"
+msgstr "VSync Adaptativo"
+
+msgid "UI_FRAME_RATE_CUSTOM"
+msgstr "Personalizado"
+
+msgid "UI_VSYNC_ENABLED"
+msgstr "Activado"
+
+msgid "UI_VSYNC_DISABLED"
+msgstr "Desactivado"
+
+msgid "UI_COLORBLIND_NONE"
+msgstr "Ninguno"
+
+msgid "UI_RENDER_SCALE"
+msgstr "Escala de Renderizado"
+
+msgid "UI_FRAME_RATE_LIMIT"
+msgstr "Límite de FPS"
+
+msgid "UI_MAX_FRAME_RATE"
+msgstr "FPS Máximo"
+
+msgid "UI_VSYNC"
+msgstr "VSync"
+
+msgid "UI_GAMMA_CORRECTION"
+msgstr "Corrección Gamma"
+
+msgid "UI_CONTRAST"
+msgstr "Contraste"
+
+msgid "UI_BRIGHTNESS"
+msgstr "Brillo"
+
+msgid "UI_REDUCE_SCREEN_SHAKE"
+msgstr "Reducir Temblor de Pantalla"
+
+msgid "UI_SCALE_PRESET"
+msgstr "Escala de la UI"
+
+msgid "UI_WINDOW_MODE"
+msgstr "Modo de Ventana"
+
+msgid "UI_INPUTMAP"
+msgstr "Mapeo de Teclas"
+
+msgid "UI_INPUT_ACTION"
+msgstr "Acción"
+
+msgid "UI_INPUT_KEYBOARD"
+msgstr "Teclado"
+
+msgid "UI_INPUT_CONTROLLER"
+msgstr "Controlador"
+
+msgid "UI_INPUT_MOUSE"
+msgstr "Ratón"
+
+msgid "UI_INPUT_PRESS_KEY"
+msgstr "Presiona una tecla..."
+
+msgid "INPUT_PAUSE_NAME"
+msgstr "Pausar"
+
+msgid "INPUT_TOGGLE_CONSOLE_NAME"
+msgstr "Alternar Consola"
+
+msgid "INPUT_MUSIC_CHANGE_NAME"
+msgstr "Cambiar Música"
+
+msgid "UI_FSR_ULTRA_QUALITY"
+msgstr "FSR Calidad Ultra"
+
+msgid "UI_FSR_QUALITY"
+msgstr "FSR Calidad"
+
+msgid "UI_FSR_PERFORMANCE"
+msgstr "FSR Rendimiento"
+
+msgid "UI_FSR_ULTRA_PERFORMANCE"
+msgstr "FSR Rendimiento Ultra"
+
+msgid "UI_SCALE_100_PERCENT"
+msgstr "100%"
+
+msgid "UI_SCALE_125_PERCENT"
+msgstr "125%"
+
+msgid "UI_SCALE_150_PERCENT"
+msgstr "150%"
+
+msgid "UI_SCALE_175_PERCENT"
+msgstr "175%"
+
+msgid "UI_SCALE_200_PERCENT"
+msgstr "200%"
+
+msgid "ui.main_menu.new_game_tooltip"
+msgstr "Inicia un nuevo juego desde el principio."
+
+msgid "ui.main_menu.options_tooltip"
+msgstr "Ajusta la configuración del juego, como vídeo, audio y controles."
+
+msgid "ui.main_menu.exit_tooltip"
+msgstr "Sale del juego."
+
+msgid "ui.pause_menu.resume_game_tooltip"
+msgstr "Reanuda el juego actual."
+
+msgid "ui.pause_menu.options_tooltip"
+msgstr "Ajusta la configuración del juego, como vídeo, audio y controles."
+
+msgid "ui.pause_menu.exit_tooltip"
+msgstr "Sale del juego."

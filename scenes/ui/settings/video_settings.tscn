@@ -1,0 +1,528 @@
+[gd_scene load_steps=18 format=3 uid="uid://b8n0le3mmhafb"]
+
+[ext_resource type="Script" uid="uid://c8soxpoohhv3k" path="res://scripts/ui/settings/video/monitor.gd" id="1"]
+[ext_resource type="FontFile" uid="uid://bml1tlmc1m8p" path="res://assets/fonts/sourcesans.otf" id="2"]
+[ext_resource type="Script" uid="uid://b0to51po0ycj" path="res://scripts/ui/settings/video/window.gd" id="3"]
+[ext_resource type="Script" uid="uid://bpixej8va8ltk" path="res://scripts/ui/settings/video/resolution.gd" id="4"]
+[ext_resource type="Script" uid="uid://mcw6jcmukn0p" path="res://scripts/ui/settings/video/aspect.gd" id="5"]
+[ext_resource type="Script" uid="uid://dxglauj582j4f" path="res://scripts/ui/settings/video/dynamic_render.gd" id="6"]
+[ext_resource type="Script" uid="uid://23p4eofu6nmn" path="res://scripts/ui/settings/video/upscaling_quality.gd" id="7"]
+[ext_resource type="Script" uid="uid://cil22dy7linnr" path="res://scripts/ui/settings/video/frame_rate.gd" id="8"]
+[ext_resource type="Script" uid="uid://xgcla4f0g3v0" path="res://scripts/ui/settings/video/max_frame.gd" id="9"]
+[ext_resource type="Script" uid="uid://diqpb8y127a6m" path="res://scripts/ui/settings/video/v_sync.gd" id="10"]
+[ext_resource type="Script" uid="uid://bfdb2o1lsybe0" path="res://scripts/ui/settings/video/gamma_correction.gd" id="11"]
+[ext_resource type="Script" uid="uid://c10xql2at2elx" path="res://scripts/ui/settings/video/contrast.gd" id="12"]
+[ext_resource type="Script" uid="uid://1j8gwak2tdg6" path="res://scripts/ui/settings/video/brightness.gd" id="13"]
+[ext_resource type="Script" uid="uid://d34h55j7rh84o" path="res://scripts/ui/settings/video/shaders.gd" id="14"]
+[ext_resource type="Script" uid="uid://hq6ekapwquwn" path="res://scripts/ui/settings/video/effects_quality.gd" id="15"]
+[ext_resource type="Script" uid="uid://bka2dvk3puxs" path="res://scripts/ui/settings/video/colorblind.gd" id="16"]
+[ext_resource type="Script" uid="uid://byvycfw8yhyom" path="res://scripts/ui/settings/video/ui_scale.gd" id="17"]
+
+[node name="VideoSettings" type="VBoxContainer"]
+custom_minimum_size = Vector2(560, 0)
+offset_right = 540.0
+offset_bottom = 590.0
+theme_override_constants/separation = 10
+
+[node name="Monitor" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+script = ExtResource("1")
+
+[node name="MonitorLabel" type="Label" parent="Monitor"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_MONITOR_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_MONITOR"
+
+[node name="MonitorOptionButton" type="OptionButton" parent="Monitor"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_MONITOR_DESC"
+theme_override_fonts/font = ExtResource("2")
+
+[node name="Window" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_WINDOW_MODE_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("3")
+
+[node name="WindowModeLabel" type="Label" parent="Window"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_WINDOW_MODE_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_WINDOW_MODE"
+
+[node name="WindowModeOptionButton" type="OptionButton" parent="Window"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_WINDOW_MODE_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 0
+item_count = 3
+popup/item_0/text = "UI_WINDOW_MODE_WINDOWED"
+popup/item_0/id = 0
+popup/item_1/text = "UI_WINDOW_MODE_FULLSCREEN"
+popup/item_1/id = 1
+popup/item_2/text = "UI_WINDOW_MODE_BORDERLESS"
+popup/item_2/id = 2
+
+[node name="Resolution" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_RESOLUTION_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("4")
+
+[node name="ResolutionLabel" type="Label" parent="Resolution"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_RESOLUTION_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_RESOLUTION"
+
+[node name="ResolutionOptionButton" type="OptionButton" parent="Resolution"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_RESOLUTION_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 2
+item_count = 6
+popup/item_0/text = "640x360"
+popup/item_0/id = 1
+popup/item_1/text = "854x480"
+popup/item_1/id = 2
+popup/item_2/text = "1280x720"
+popup/item_2/id = 3
+popup/item_3/text = "1920x1080"
+popup/item_3/id = 4
+popup/item_4/text = "2560x1440"
+popup/item_4/id = 5
+popup/item_5/text = "3840x2160"
+popup/item_5/id = 6
+
+[node name="Aspect" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_ASPECT_RATIO_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("5")
+
+[node name="AspectRatioLabel" type="Label" parent="Aspect"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_ASPECT_RATIO_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_ASPECT_RATIO"
+
+[node name="AspectRatioOptionButton" type="OptionButton" parent="Aspect"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_ASPECT_RATIO_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 0
+item_count = 5
+popup/item_0/text = "UI_ASPECT_FREE"
+popup/item_0/id = 0
+popup/item_1/text = "UI_ASPECT_KEEP"
+popup/item_1/id = 1
+popup/item_2/text = "UI_ASPECT_KEEP_WIDTH"
+popup/item_2/id = 2
+popup/item_3/text = "UI_ASPECT_KEEP_HEIGHT"
+popup/item_3/id = 3
+popup/item_4/text = "UI_ASPECT_EXPAND"
+popup/item_4/id = 4
+
+[node name="UpscalingMode" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_UPSCALING_MODE_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("6")
+
+[node name="UpscalingModeLabel" type="Label" parent="UpscalingMode"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_UPSCALING_MODE_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_UPSCALE_MODE"
+
+[node name="UpscalingModeOptionButton" type="OptionButton" parent="UpscalingMode"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_UPSCALING_MODE_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 0
+item_count = 3
+popup/item_0/text = "UI_UPSCALING_NONE"
+popup/item_0/id = 0
+popup/item_1/text = "UI_UPSCALE_FSR1"
+popup/item_1/id = 1
+popup/item_2/text = "UI_UPSCALE_FSR2"
+popup/item_2/id = 2
+
+[node name="UpscalingQuality" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_UPSCALING_QUALITY_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("7")
+
+[node name="UpscalingQualityLabel" type="Label" parent="UpscalingQuality"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_UPSCALING_QUALITY_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_UPSCALING_QUALITY"
+
+[node name="UpscalingQualityOptionButton" type="OptionButton" parent="UpscalingQuality"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_UPSCALING_QUALITY_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 2
+item_count = 5
+popup/item_0/text = "UI_FSR_ULTRA_QUALITY"
+popup/item_0/id = 0
+popup/item_1/text = "UI_FSR_QUALITY"
+popup/item_1/id = 1
+popup/item_2/text = "UI_FSR_BALANCED"
+popup/item_2/id = 2
+popup/item_3/text = "UI_FSR_PERFORMANCE"
+popup/item_3/id = 3
+popup/item_4/text = "UI_FSR_ULTRA_PERFORMANCE"
+popup/item_4/id = 4
+
+[node name="FrameRate" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+script = ExtResource("8")
+
+[node name="FrameRateLimitLabel" type="Label" parent="FrameRate"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_FRAME_RATE_LIMIT_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_FRAME_RATE_LIMIT"
+
+[node name="FrameRateLimitOptionButton" type="OptionButton" parent="FrameRate"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_FRAME_RATE_LIMIT_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 0
+item_count = 4
+popup/item_0/text = "UI_FRAME_RATE_NO_LIMIT"
+popup/item_0/id = 0
+popup/item_1/text = "UI_FRAME_RATE_VSYNC"
+popup/item_1/id = 1
+popup/item_2/text = "UI_FRAME_RATE_ADAPTIVE_VSYNC"
+popup/item_2/id = 2
+popup/item_3/text = "UI_FPS_CUSTOM"
+popup/item_3/id = 3
+
+[node name="MaxFrame" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_MAX_FRAME_RATE_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("9")
+
+[node name="MaxFrameRateLabel" type="Label" parent="MaxFrame"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_MAX_FRAME_RATE_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_MAX_FRAME_RATE"
+
+[node name="MaxFrameRateSlider" type="HSlider" parent="MaxFrame"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_MAX_FRAME_RATE_DESC"
+min_value = 30.0
+max_value = 300.0
+step = 2.0
+value = 300.0
+
+[node name="MaxFrameRateValueLabel" type="Label" parent="MaxFrame"]
+custom_minimum_size = Vector2(35, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+text = "300"
+horizontal_alignment = 2
+
+[node name="VSync" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_VSYNC_MODE_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("10")
+
+[node name="VSyncLabel" type="Label" parent="VSync"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_VSYNC_MODE_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_VSYNC"
+
+[node name="VSyncOptionButton" type="OptionButton" parent="VSync"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_VSYNC_MODE_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 0
+item_count = 3
+popup/item_0/text = "UI_VSYNC_ENABLED"
+popup/item_0/id = 0
+popup/item_1/text = "UI_VSYNC_ADAPTIVE"
+popup/item_1/id = 1
+popup/item_2/text = "UI_VSYNC_DISABLED"
+popup/item_2/id = 2
+
+[node name="GammaCorrection" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_GAMMA_CORRECTION_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("11")
+
+[node name="GammaCorrectionLabel" type="Label" parent="GammaCorrection"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_GAMMA_CORRECTION_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_GAMMA_CORRECTION"
+
+[node name="GammaCorrectionSlider" type="HSlider" parent="GammaCorrection"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_GAMMA_CORRECTION_DESC"
+min_value = 1.0
+max_value = 3.0
+step = 0.01
+value = 2.2
+
+[node name="GammaCorrectionValueLabel" type="Label" parent="GammaCorrection"]
+custom_minimum_size = Vector2(35, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+text = "2.2"
+horizontal_alignment = 2
+
+[node name="Contrast" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_CONTRAST_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("12")
+
+[node name="ContrastLabel" type="Label" parent="Contrast"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_CONTRAST_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_CONTRAST"
+
+[node name="ContrastSlider" type="HSlider" parent="Contrast"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_CONTRAST_DESC"
+min_value = 0.5
+max_value = 1.5
+step = 0.01
+value = 1.0
+
+[node name="ContrastValueLabel" type="Label" parent="Contrast"]
+custom_minimum_size = Vector2(35, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+text = "1.0"
+horizontal_alignment = 2
+
+[node name="Brightness" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_BRIGHTNESS_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("13")
+
+[node name="BrightnessLabel" type="Label" parent="Brightness"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_BRIGHTNESS_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_BRIGHTNESS"
+
+[node name="BrightnessSlider" type="HSlider" parent="Brightness"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_BRIGHTNESS_DESC"
+min_value = 0.5
+max_value = 1.5
+step = 0.01
+value = 1.0
+
+[node name="BrightnessValueLabel" type="Label" parent="Brightness"]
+custom_minimum_size = Vector2(35, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+text = "1.0"
+horizontal_alignment = 2
+
+[node name="Shaders" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+script = ExtResource("14")
+
+[node name="ShadersQualityLabel" type="Label" parent="Shaders"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_SHADERS_QUALITY_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "TOOLTIP_SHADERS_QUALITY_TITLE"
+
+[node name="ShadersQualityOptionButton" type="OptionButton" parent="Shaders"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_SHADERS_QUALITY_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 2
+item_count = 3
+popup/item_0/text = "UI_QUALITY_LOW"
+popup/item_0/id = 0
+popup/item_1/text = "UI_QUALITY_MEDIUM"
+popup/item_1/id = 1
+popup/item_2/text = "UI_QUALITY_HIGH"
+popup/item_2/id = 2
+
+[node name="EffectsQuality" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_EFFECTS_QUALITY_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("15")
+
+[node name="EffectsQualityLabel" type="Label" parent="EffectsQuality"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_EFFECTS_QUALITY_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "TOOLTIP_EFFECTS_QUALITY_TITLE"
+
+[node name="EffectsQualityOptionButton" type="OptionButton" parent="EffectsQuality"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_EFFECTS_QUALITY_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 2
+item_count = 3
+popup/item_0/text = "UI_QUALITY_LOW"
+popup/item_0/id = 0
+popup/item_1/text = "UI_QUALITY_MEDIUM"
+popup/item_1/id = 1
+popup/item_2/text = "UI_QUALITY_HIGH"
+popup/item_2/id = 2
+
+[node name="Colorblind" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_COLORBLIND_MODE_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("16")
+
+[node name="ColorblindModeLabel" type="Label" parent="Colorblind"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_COLORBLIND_MODE_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "TOOLTIP_COLORBLIND_MODE_TITLE"
+
+[node name="ColorblindModeOptionButton" type="OptionButton" parent="Colorblind"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_COLORBLIND_MODE_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 0
+item_count = 4
+popup/item_0/text = "UI_COLORBLIND_NONE"
+popup/item_0/id = 0
+popup/item_1/text = "UI_COLORBLIND_PROTANOPIA"
+popup/item_1/id = 1
+popup/item_2/text = "UI_COLORBLIND_DEUTERANOPIA"
+popup/item_2/id = 2
+popup/item_3/text = "UI_COLORBLIND_TRITANOPIA"
+popup/item_3/id = 3
+
+[node name="UIScale" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+tooltip_text = "TOOLTIP_UI_SCALE_DESC"
+theme_override_constants/separation = 20
+script = ExtResource("17")
+
+[node name="UIScaleLabel" type="Label" parent="UIScale"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+tooltip_text = "TOOLTIP_UI_SCALE_DESC"
+mouse_filter = 0
+theme_override_fonts/font = ExtResource("2")
+text = "UI_SCALE_PRESET"
+
+[node name="UIScaleOptionButton" type="OptionButton" parent="UIScale"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "TOOLTIP_UI_SCALE_DESC"
+theme_override_fonts/font = ExtResource("2")
+selected = 0
+item_count = 5
+popup/item_0/text = "UI_SCALE_100_PERCENT"
+popup/item_0/id = 0
+popup/item_1/text = "UI_SCALE_125_PERCENT"
+popup/item_1/id = 1
+popup/item_2/text = "UI_SCALE_150_PERCENT"
+popup/item_2/id = 2
+popup/item_3/text = "UI_SCALE_175_PERCENT"
+popup/item_3/id = 3
+popup/item_4/text = "UI_SCALE_200_PERCENT"
+popup/item_4/id = 4
+
+[connection signal="item_selected" from="Monitor/MonitorOptionButton" to="Monitor" method="_on_monitor_option_button_item_selected"]
+[connection signal="item_selected" from="Window/WindowModeOptionButton" to="Window" method="_on_window_mode_option_button_item_selected"]
+[connection signal="item_selected" from="Resolution/ResolutionOptionButton" to="Resolution" method="_on_resolution_option_button_item_selected"]
+[connection signal="item_selected" from="Aspect/AspectRatioOptionButton" to="Aspect" method="_on_aspect_ratio_option_button_item_selected"]
+[connection signal="item_selected" from="UpscalingMode/UpscalingModeOptionButton" to="UpscalingMode" method="_on_upscaling_mode_option_button_item_selected"]
+[connection signal="item_selected" from="UpscalingQuality/UpscalingQualityOptionButton" to="UpscalingQuality" method="_on_upscaling_quality_option_button_item_selected"]
+[connection signal="item_selected" from="FrameRate/FrameRateLimitOptionButton" to="FrameRate" method="_on_frame_rate_limit_option_button_item_selected"]
+[connection signal="drag_ended" from="MaxFrame/MaxFrameRateSlider" to="MaxFrame" method="_on_max_frame_rate_slider_drag_ended"]
+[connection signal="item_focused" from="VSync/VSyncOptionButton" to="VSync" method="_on_v_sync_option_button_item_focused"]
+[connection signal="drag_ended" from="GammaCorrection/GammaCorrectionSlider" to="GammaCorrection" method="_on_gamma_correction_slider_drag_ended"]
+[connection signal="drag_ended" from="Contrast/ContrastSlider" to="Contrast" method="_on_contrast_slider_drag_ended"]
+[connection signal="drag_ended" from="Brightness/BrightnessSlider" to="Brightness" method="_on_brightness_slider_drag_ended"]
+[connection signal="item_selected" from="Shaders/ShadersQualityOptionButton" to="Shaders" method="_on_shaders_quality_option_button_item_selected"]
+[connection signal="item_focused" from="EffectsQuality/EffectsQualityOptionButton" to="EffectsQuality" method="_on_effects_quality_option_button_item_focused"]
+[connection signal="item_focused" from="Colorblind/ColorblindModeOptionButton" to="Colorblind" method="_on_colorblind_mode_option_button_item_focused"]
+[connection signal="item_focused" from="UIScale/UIScaleOptionButton" to="UIScale" method="_on_ui_scale_option_button_item_focused"]

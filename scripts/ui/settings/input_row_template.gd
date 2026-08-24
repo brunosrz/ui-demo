@@ -41,6 +41,23 @@ func update_bindings(bindings: Array) -> void:
 	mouse_button.text = mouse_binding if not mouse_binding.is_empty() else tr("UI_NONE")
 
 
+func get_button_for_type(input_type: String) -> Button:
+	match input_type:
+		"keyboard":
+			return key_button
+		"controller":
+			return controller_button
+		"mouse":
+			return mouse_button
+	return null
+
+
+func set_listening(input_type: String) -> void:
+	var button = get_button_for_type(input_type)
+	if button:
+		button.text = tr("UI_INPUT_LISTENING")
+
+
 func _on_key_button_pressed() -> void:
 	remap_requested.emit(action_name, "keyboard")
 

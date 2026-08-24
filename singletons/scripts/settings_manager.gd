@@ -1,6 +1,7 @@
 extends Node
 
 const SETTINGS_PATH = "user://settings.json"
+const INPUT_BINDINGS_PATH = "user://input_bindings.json"
 
 const DEFAULT_SETTINGS = {
 	"audio":
@@ -67,6 +68,7 @@ func _ready() -> void:
 
 	_detect_display_options()
 	load_settings()
+	_load_input_bindings()
 
 
 func get_display_options() -> Dictionary:
@@ -144,8 +146,37 @@ func load_input_map() -> void:
 
 func reset_input_map() -> void:
 	InputMap.load_from_project_settings()
+	if FileAccess.file_exists(INPUT_BINDINGS_PATH):
+		DirAccess.remove_absolute(INPUT_BINDINGS_PATH)
 	load_input_map()
 	print("Mapeamento de teclas resetado para o padrão.")
+
+
+func rebind_action(action: String, input_type: String, event: InputEvent) -> void:
+	if not InputMap.has_action(action):
+		push_warning("SettingsManager: Ação de input desconhecida: " + action)
+		return
+
+	for existing_event in InputMap.action_get_events(action):
+		if _event_matches_type(existing_event, input_type):
+			InputMap.action_erase_event(action, existing_event)
+
+	InputMap.action_add_event(action, event)
+
+	_save_input_bindings()
+	load_input_map()
+	print("SettingsManager: Ação '%s' remapeada (%s)." % [action, input_type])
+
+
+func _event_matches_type(event: InputEvent, input_type: String) -> bool:
+	match input_type:
+		"keyboard":
+			return event is InputEventKey
+		"controller":
+			return event is InputEventJoypadButton
+		"mouse":
+			return event is InputEventMouseButton
+	return false
 
 
 func _build_input_map_data() -> Dictionary:
@@ -158,33 +189,79 @@ func _build_input_map_data() -> Dictionary:
 
 		var bindings: Array = []
 		for event in InputMap.action_get_events(action_name):
-			if event is InputEventKey:
-				(
-					bindings
-					. append(
-						{
-							"type": "InputEventKey",
-							"keycode":
-							(
-								event.physical_keycode
-								if event.physical_keycode != 0
-								else event.keycode
-							),
-						}
-					)
-				)
-			elif event is InputEventJoypadButton:
-				bindings.append(
-					{"type": "InputEventJoypadButton", "button_index": event.button_index}
-				)
-			elif event is InputEventMouseButton:
-				bindings.append(
-					{"type": "InputEventMouseButton", "button_index": event.button_index}
-				)
+			var serialized_event = _serialize_input_event(event)
+			if not serialized_event.is_empty():
+				bindings.append(serialized_event)
 
 		actions[action_name] = bindings
 
 	return {"general": actions}
+
+
+func _serialize_input_event(event: InputEvent) -> Dictionary:
+	if event is InputEventKey:
+		return {
+			"type": "InputEventKey",
+			"keycode": event.physical_keycode if event.physical_keycode != 0 else event.keycode,
+		}
+	if event is InputEventJoypadButton:
+		return {"type": "InputEventJoypadButton", "button_index": event.button_index}
+	if event is InputEventMouseButton:
+		return {"type": "InputEventMouseButton", "button_index": event.button_index}
+	return {}
+
+
+func _deserialize_input_event(event_data: Dictionary) -> InputEvent:
+	match event_data.get("type", ""):
+		"InputEventKey":
+			var key_event = InputEventKey.new()
+			key_event.physical_keycode = event_data.get("keycode", 0)
+			return key_event
+		"InputEventJoypadButton":
+			var joypad_event = InputEventJoypadButton.new()
+			joypad_event.button_index = event_data.get("button_index", 0)
+			return joypad_event
+		"InputEventMouseButton":
+			var mouse_event = InputEventMouseButton.new()
+			mouse_event.button_index = event_data.get("button_index", 0)
+			return mouse_event
+	return null
+
+
+func _save_input_bindings() -> void:
+	var data: Dictionary = _build_input_map_data()["general"]
+	var file = FileAccess.open(INPUT_BINDINGS_PATH, FileAccess.WRITE)
+	if file:
+		file.store_string(JSON.stringify(data, "  "))
+	else:
+		printerr(
+			"SettingsManager: Falha ao salvar mapeamento de teclas em: %s" % INPUT_BINDINGS_PATH
+		)
+
+
+func _load_input_bindings() -> void:
+	if not FileAccess.file_exists(INPUT_BINDINGS_PATH):
+		return
+
+	var file = FileAccess.open(INPUT_BINDINGS_PATH, FileAccess.READ)
+	if not file:
+		return
+
+	var parsed = JSON.parse_string(file.get_as_text())
+	if typeof(parsed) != TYPE_DICTIONARY:
+		return
+
+	for action_name in parsed:
+		if not InputMap.has_action(action_name):
+			continue
+
+		for existing_event in InputMap.action_get_events(action_name):
+			InputMap.action_erase_event(action_name, existing_event)
+
+		for event_data in parsed[action_name]:
+			var event = _deserialize_input_event(event_data)
+			if event:
+				InputMap.action_add_event(action_name, event)
 
 
 func _detect_display_options() -> void:

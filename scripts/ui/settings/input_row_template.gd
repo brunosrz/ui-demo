@@ -16,7 +16,7 @@ func _ready() -> void:
 
 func set_action_name(name: String) -> void:
 	action_name = name
-	action_label.text = tr("input_action." + name)
+	action_label.text = tr("UI_INPUT_ACTION_" + name.to_upper())
 
 
 func update_bindings(bindings: Array) -> void:

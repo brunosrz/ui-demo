@@ -28,13 +28,14 @@ func _update_ui(input_map_data: Dictionary) -> void:
 				preload("res://scenes/ui/settings/input_row_template.tscn").instantiate()
 			)
 			input_actions_container.add_child(input_row)
-			input_row.setup(category_key, action_key, input_map_data[category_key][action_key])
-			input_row.input_rebind_requested.connect(_on_input_rebind_requested)
+			input_row.set_action_name(action_key)
+			input_row.update_bindings(input_map_data[category_key][action_key])
+			input_row.remap_requested.connect(_on_remap_requested.bind(category_key))
 
 
 func _on_reset_button_pressed() -> void:
 	GlobalEvents.request_reset_input_map.emit()
 
 
-func _on_input_rebind_requested(category: String, action: String) -> void:
-	print("Remapear: ", category, ".", action)
+func _on_remap_requested(action: String, input_type: String, category: String) -> void:
+	print("Remapear: ", category, ".", action, " (", input_type, ")")

@@ -14,6 +14,13 @@ signal request_reset_settings_changed
 signal settings_data_save_requested(settings_data: Dictionary)
 
 @warning_ignore("unused_signal")
+signal request_loading_input_map_changed
+@warning_ignore("unused_signal")
+signal loading_input_map_changed(input_map_data: Dictionary)
+@warning_ignore("unused_signal")
+signal request_reset_input_map
+
+@warning_ignore("unused_signal")
 signal language_changed(change_data: Dictionary)
 @warning_ignore("unused_signal")
 signal request_loading_language_changed

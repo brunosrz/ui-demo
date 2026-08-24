@@ -56,6 +56,10 @@ func _ready() -> void:
 	GlobalEvents.request_saving_settings_changed.connect(save_settings)
 	print("SettingsManager: Conectando request_reset_settings_changed...")
 	GlobalEvents.request_reset_settings_changed.connect(reset_settings)
+	print("SettingsManager: Conectando request_loading_input_map_changed...")
+	GlobalEvents.request_loading_input_map_changed.connect(load_input_map)
+	print("SettingsManager: Conectando request_reset_input_map...")
+	GlobalEvents.request_reset_input_map.connect(reset_input_map)
 	print("SettingsManager: Conectando setting_changed...")
 	GlobalEvents.setting_changed.connect(_on_setting_changed_live)
 	print("SettingsManager: Conectando language_changed...")
@@ -132,6 +136,55 @@ func reset_settings() -> void:
 	settings = DEFAULT_SETTINGS.duplicate(true)
 	save_settings()
 	print("Configurações resetadas para o padrão.")
+
+
+func load_input_map() -> void:
+	GlobalEvents.loading_input_map_changed.emit(_build_input_map_data())
+
+
+func reset_input_map() -> void:
+	InputMap.load_from_project_settings()
+	load_input_map()
+	print("Mapeamento de teclas resetado para o padrão.")
+
+
+func _build_input_map_data() -> Dictionary:
+	var actions: Dictionary = {}
+
+	for action in InputMap.get_actions():
+		var action_name: String = action
+		if action_name.begins_with("ui_"):
+			continue
+
+		var bindings: Array = []
+		for event in InputMap.action_get_events(action_name):
+			if event is InputEventKey:
+				(
+					bindings
+					. append(
+						{
+							"type": "InputEventKey",
+							"keycode":
+							(
+								event.physical_keycode
+								if event.physical_keycode != 0
+								else event.keycode
+							),
+						}
+					)
+				)
+			elif event is InputEventJoypadButton:
+				bindings.append(
+					{"type": "InputEventJoypadButton", "button_index": event.button_index}
+				)
+			elif event is InputEventMouseButton:
+				bindings.append(
+					{"type": "InputEventMouseButton", "button_index": event.button_index}
+				)
+
+		actions[action_name] = bindings
+
+	return {"general": actions}
 
 
 func _detect_display_options() -> void:
